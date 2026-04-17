@@ -1,4 +1,4 @@
-[[Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/barryispuzzled/PTV-Hydrogen_Model/blob/main/PTV_calc.py)
+[[Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/barryispuzzled/PTV-Hydrogen_Model/blob/main/Run_PTV.ipynb)
 # PTV-Hydrogen-Model
 A photonic toroidal vortex model for calculating hydrogen atom hyperfine levels
 
