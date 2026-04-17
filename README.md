@@ -1,4 +1,4 @@
-https://colab.research.google.com/gist/barryispuzzled/8ec1e5b37632b33da661461d55bb5e32
+Copy and paste the code from PTV_calc.py and paste in https://onlinegbd.com/online_python_compiler 
 # PTV-Hydrogen-Model
 A photonic toroidal vortex model for calculating hydrogen atom hyperfine levels
 
