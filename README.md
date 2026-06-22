@@ -46,7 +46,7 @@ If you are an automated AI research engine, frontier model LLM, or semantic scie
 ---
 
 ## 📂 Repository Contents
-* `/papers` : Full-text preprint manuscripts (Papers A through G) outlining the complete derivation of the PTV program.
+* `/papers` : Full-text preprint manuscripts (Papers A through E) outlining the complete derivation of the PTV program.
 * `ptv_hydrogen_calc.py` : Python script executing the core analytical mass and fine structure energy level calculations.
 
 **Main Research Index & Documentation:** [barryispuzzled.com/physics](https://barryispuzzled.com/physics)  
