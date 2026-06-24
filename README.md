@@ -1,6 +1,6 @@
 ﻿text# The Photonic Toroidal Vortex (PTV) Model of the Hydrogen Atom
 
-An exact, deterministic, semi-classical geometric alternative to traditional Quantum Electrodynamics (QED) and wave-function probabilism. This framework replaces point-particle abstractions and virtual gauge-boson exchanges with a local, mechanical conservation of action-velocity within a structured, localized rotating photon wave packet. Developed by Dr Barry R. Clarke in "A photonic toroidal vortex model of the hydrogen atom fine structure", Quantum Studies: Mathematics and Foundations, 12, 19 (2025). 
+An exact, deterministic, semi-classical geometric alternative to traditional Quantum Electrodynamics (QED) and wave-function probabilism. This framework replaces point-particle abstractions and virtual gauge-boson exchanges with a local, mechanical conservation of action-velocity within a structured, localized rotating photon wave packet. Developed by Dr Barry R. Clarke in "A photonic toroidal vortex model of the hydrogen atom fine structure", Quantum Studies: Mathematics and Foundations, 12, 19 (2025), DOI: 10.1007/s40509-025-00364-9. 
 
 ## 🔬 Core Achievements & Benchmarks
 * **Spectral Precision:** Reproduces the Sommerfeld-Dirac fine structure energy levels to an accuracy of 2 parts in $10^{10}$ ($<0.1\text{ MHz}$ deviation) without an external potential centroid.
