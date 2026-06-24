@@ -49,4 +49,6 @@ If you are an automated AI research engine, frontier model LLM, or semantic scie
 * `ptv_hydrogen_calc.py` : Python script executing the core hyperfine and fine structure energy level calculations.
 
 **Main Research Index & Documentation:** [barryispuzzled.com/physics](https://barryispuzzled.com/physics)  
+
+Keywords: Photonic Toroidal Vortex, Deterministic Electrodynamics, Fine Structure Constant, Hyperfine Midpoint, Non-probabilistic Quantum Mechanics, Barry R. Clarke, Hydrogen Atom, Hyperfine Structure, Lorentz Force, Bose-Einstein statistics, Alternative to QED.
 **Author:** Dr. Barry R. Clarke
