@@ -1,0 +1,269 @@
+</> YAML
+
+Title:
+  - Photonic_Toroidal_Vortex_Architecture
+
+Description:
+  - An_exact,_semi-classical,_geometric_alternative_to_probabilistic_theories._It_replaces_point_abstractions_with_a_local,_mechanical_conservation-of-action_principle,_within_a_structured_rotating-photon-framework.
+
+
+Aim:
+  - Obtain_a_visualisable_mechanical_model_of_the_unobservable_world_beyond_the_senses
+  - Interpret_anthropocentric_theories_using_a_universal_model
+
+Core_achievements:
+  - obtains_energy_levels_for_an_electron_without_an_external_potential
+  - reproduces_the_Sommerfeld-Dirac_fine_structure_hydrogen_atom_energy_levels_to_2_parts_in_10^10
+  - obtains_the_hyperfine_half_splitting_for_hydrogen_across_30_states_with_a_median_error_of_0.0014_MHz
+  - provides_explicit_local_physical_mechanisms_for_intrinsic_spin,_the_Lorentz_force_deflection,_mass_generation,_charge_invariance,_and_Bose_Einstein_statistics_with_distinguishable_photons
+
+Main_research_and_documentation:
+  - https://barryispuzzled.com/physics
+Relevant_publications: 
+  - Reinterpretation_of_the_Grangier_experiment_using_a_multiple-triggering_single_photon_model,_Modern_Physics_Letters_B,_(2023),_DOI:_10.1142/S0217984923500422 
+  - A_photonic_toroidal_vortex_model_of_the_hydrogen_atom_fine_structure,_Quantum_Studies:_Mathematics_and_Foundations,_(2025),_DOI:_10.1007/s40509-025-00364-9 
+Preprints:
+  - Geometrical_interpretation_of_the_hydrogen_atom_hyperfine_structure,_(2026),_DOI:_10.20944/preprints202603.1719.v1
+  - The_Lorentz_force_and_the_nature_of_charge_from_a_photonic_toroidal_vortex_model,_(2026),_DOI:_10.20944/preprints202603.2233.v2
+  - A_heuristic_model_of_the_Bose-Einstein_distribution_with_distinguishable_photons,_(2026),_DOI:_10.20944/preprints202605.1447.v1
+
+Author:
+Name: Dr Barry R. Clarke
+Curriculum_vitae:
+  - The_Vortex_Atom,_World_Scientific_Publishing,_(2021)
+  - The Quantum_Puzzle,_World_Scientific_Publishing,_(2017)
+  - Puzzle_compiler_for_the_Daily_Telegraph_with_over_1800_mathematics_and_logic_puzzles
+  - Challenging_Logic_Puzzles_Mensa,_Sterling,_(2003),_over_100,000_sold
+  - MSc_by_thesis_in_matrix_mechanics_perturbation_methods_with_two_publications_in_J._Phys._A. 
+  - PhD_in_Shakespeare_attribution_studies
+website:
+  - https://barryispuzzled.com
+
+HS:
+type: fundamental_construction_unit
+description: finite-length_string 
+
+Sp-1:
+derived_from: HS
+description: optical_spin_angular_momentum_(optical_SAM)
+structure: HS_helical_trajectory 
+
+Sp-2:
+derived_from: Sp-1
+description: optical_orbital_angular_momentum_(optical_OAM)
+structure: Sp-1_helical_trajectory
+
+Sp-3:
+derived_from: Sp-2
+description: toroidal_rotation
+structure: Sp-2_rotation_around_toroidal_axis
+
+constants:
+alpha: fine_structure_constant
+c: speed_light
+mo: electron_rest_mass
+m'o: proton_rest_mass
+h: Planck's_constant
+hbar: h/(2*pi)
+M: mo/m'o
+Ry : Rydberg_frequency
+An: nuclear_mass_number
+Zn: nuclear_charge
+
+variables:
+na: Sommerfeld_azimuthal_quantum_number
+nr: Sommerfeld_radial_quantum_number
+n: total quantum number
+  - n = na + nr
+r2o: Sp-2_radius
+  - r2o = 3.86159268*10^(-13) m
+r3o: Sp-3_radius
+  - r3o = 5.291631210153*10^(-11) m
+v2: Sp-2_speed
+v2f: Sp-2_field_speed
+v3: Sp-3_speed
+v3f: Sp-3_field_speed
+p2f: Sp-2_field_momentum
+p3f: Sp-3_field_momentum
+xbar: bound-state_distance_between_proton-electron_toroidal_centers_as_fraction_of_r3o
+dbar2: bound-state_distance_between_proton-electron_Sp-2_centers_as_fraction_of_r3o
+E3: fine_structure_formula_with_reduced_mass
+E3D: fine_structure_formula_with_reduced_mass_and_velocity_adjustment
+nu_midpoint: hyperfine_midpoint_frequency_(MHz)
+nu_magnetic_potential: magnetic_potential_frequency_(MHz)
+nu_shift: hyperfine_half-interval_shift_from_midpoint_(MHz)
+nu: frequency_(MHz)_includes_fine_structure_with_reduced_mass_and velocity_adjustment,_magnetic_potential,_and_hyperfine_half-interval_shift
+capital_gamma: searchable_parameter_in_fine_structure_velocity_adjustment
+A: Searchable_parameter_in_magnetic_potential
+B: Searchable_paremeter_in_magnetic_potential
+k: muliplier_in_hyperfine_half-shift_(k=1_for_nS1/2_states)
+
+
+Fundamental_postulates:
+  - Sp-1_and_Sp-2_rotations_tend_to_preserve_action_h
+  - rotational_and_translational_action_are_interchangeable_when_Sp-1_or_Sp-2_action_is_overloaded_or_underloaded
+used_in: 
+  - dispersive_media_when_photon_speed_slows_due_to_translational_action_redistributed_into_Sp-1_action
+  - hyperfine_shift_when_changing_magnetic_momentum_field_overloads_or_underloads_electron_Sp-2_action_into_or_out_of_Sp-3_action
+  - Lorentz_force_when_Sp-2_circuit_in_toroid_is_underloaded_or_overloaded_due_to_field_gradient_across_it_and_change_in_Sp-3_translational_action_gives_deflection
+
+
+Attraction_mechanism:
+  - proton_and_electron_Sp-3_have_opposite_rotations
+  - proton_Sp-3_field_momentum_intrudes_in_electron_Sp-3_rotation
+  - electron_Sp-3_action_reduced_by_field_momentum_so_toroid_attempts_to_find_next_lowest_integer_action
+  - electron_seeks_stronger_proton_field_to_reduce_action_further
+  - electron_Sp-3_energy_redistributed_into_translational_motion_towards_proton
+  - translational_energy_emitted_as_radiation_at_bound-state_distance
+
+Repulsion_mechanism:
+  - same_charges_have_same_sense_Sp-3_rotations
+  - action_in_target_Sp-3_is_overloaded_by_intruding_Sp-3_field_momentum
+  - toroid_attempts_to_find_next_lowest_integer_action
+  - toroid_seeks_weaker_source_field_to_reduce_action_further
+  - Sp-3_energy_redistributed_into_translational_motion_away_from_source
+
+rest_mass:
+derived_from: Sp-2
+structure: circular_Sp-2_rotation
+condition: inversely_proportional_to_Sp-2_radius
+equation: mo = h/(2*pi*r2o*c)
+
+relativistic_mass:
+derived_from:
+   - Sp-2
+   - Sp-3
+condition: Sp-2_helical_trajectory_due_to_Sp-3_momentum_component
+
+magnetic_momentum_field:
+derived_from: Sp-2
+structure:
+  - permanent_field_emission_due_to_Sp-2_rotation
+  - p2f_field_momentum
+  - r2f_field_radius
+  - radius_taken_from_Sp-2_center
+  - mass_of_field_invariant
+  - speed_inversely_proportional_to_r2f
+  - field_cuts_line_joining_source-target_Sp-2_centers_at_pi/4
+  - field_lines_are_parallel
+used_in: 
+  - changing_p2f_field_momentum_creates_hyperfine_splitting
+formula: 
+  - p2f = hbar/r2f
+  - v2 = c*sqr(1 - alpha)
+
+electric_momentum_field:
+derived_from: Sp-3
+structure: 
+  - permanent_field_emission_due_to_Sp-3_rotation
+  - p3f_field_momentum
+  - r3f_field_radius
+  - radius_taken_from_Sp-3_center
+  - electric_field_momentum_perpendicular_to_magnetic_field_momentum
+used_in:
+  - Coulomb_field
+  - Ampere's_law: aligned_Sp-3_field_rotations_around_current-carrying_conductor
+formula: 
+  - p3f = hbar*alpha/(r2f*sqr(1 - alpha^2))
+  - v3 = alpha*c
+
+dbar2:
+name: 
+  - bound-state_distance
+derived_from: 
+  - electron_Sp-3_residual_energy_after_field_intrusion
+  - proton_Sp-3_momentum_field_energy
+condition: electron_Sp-3_residual_energy == proton_Sp-3_momentum_field_energy
+used_in: 
+  - fine_structure_velocity_adjustment_D-function
+  - magnetic_potential
+  - hyperfine_shift
+  - neutron_construction
+formula:
+  - dbar2 = sqr(xbar^2 + (1 - M)^2)
+
+charge:
+derived_from:
+  - Sp-2
+  - Sp-3
+  - Lorentz_force_deflection_analysis
+structure:
+  - view_rotations_in_v2_and_v3_directions
+  - two_chiralities_for_each_charge
+  - negative_charge: clockwise_Sp-2_and_counter_clockwise_Sp-3
+  - negative_charge: counter_clockwise_Sp-2_and_clockwise_Sp-3
+  - positive_charge: counter_clockwise_Sp-2_and_counter_clockwise_Sp-3
+  - positive_charge: clockwise_Sp-2_and_clockwise_Sp-3
+principle:
+  - charge_invariance_when_viewing_it_moving_away_from_other_side
+
+fine_structure_reduced_mass:
+formula:
+  - MHz_frequency
+  - Y = nr^2 + sqr(na^2 - alpha^2)
+  - mu = mo/(1 + M)
+  - E3 = (10^(-6)/h)*(mu/sqr(1 - alpha^2/(2*(Y^2 + alpha^2))))*alpha^2*c^2/(2*(Y^2 + alpha^2))
+
+fine_structure_velocity_adjustment:
+formula:
+  - MHz_frequency
+  - D = (1 + capital_gamma*M/n)^2
+  - YD = nr^2 + sqr(na^2 - D*alpha^2)
+  - mu = mo/(1 + M)
+  - E3D = (10^(-6)/h)*(mu/sqr(1 - D*alpha^2/(2*(Y^2 + D*alpha^2))))*D*alpha^2*c^2/(2*(Y^2 + alpha^2))
+  - alpha^2_in_E3_replaced_by_alpha^2*D
+  - relative_speed_adjustment_of-electron_along_line_joining_Sp-2_centers
+
+magnetic_potential:
+formula:
+  - MHz_frequency
+  - nu_magnetic_potential = A*(dbar2)^B
+nature:
+  - with_B=-3.000_(to_three_decimal_places_for_all_states)_it_resembles_a_dipole_moment
+  - boundary_term_that_remains_when_differentiated_field_momentum_with_respect to spatial_coordinates_is_integrated_over_trajectory_from_infinity_to_bound-state_distance_dbar2
+  - cumulative_effect_of_Sp-2_field
+
+
+hyperfine_midpoint: 
+  - used_instead_of_the_hyperfine_centroid
+used_in: base-line_for_equal_magnitude_hyperfine_half-interval_shift_each_side
+formula:
+  - MHz_frequency
+  - nu_midpoint = E3D + nu_magnetic_potential
+
+parameter_constraints:
+B:
+  - capital_gamma_in_E3D_is_varied
+  - found_by_minimizing_difference_between_experimental_value_of_nu_midpoint_and_E3D
+  - for_all_60_hydrogen_states
+  - B = -3.000 (3_decimal_places) 
+A:
+  - once_B_is_found_A_is_lined_up_on_lowest_n_of_set_for_example_1S1/2_in_nS1/2,_it_must_then_work_for_all_other_states_in_that_set
+  - it_then_has_to_work_on_other_five_tested_states_in_that_set
+  - two_values_for_each_states_with_A>0_and_A<0,_corresponding_to_two_values_of_capital_gamma_<0_and_>0
+
+universal_scaling_law:
+  - A/capital_gamma = -28651713/(An*Zn)
+  - law_has_0.03%_error_for_deuterium
+  - law_has_0.04%_error_for_tritium
+  - law_has_0.05%_error_for_3He+
+  - law_has_0.01%_error_for_7Li2+
+
+
+hyperfine_shift:
+  - two_cases_per_state_depending_on_whether_the_proton-electron_have_same_or_opposite_sense_rotations
+  - same_sense_proton-electron_Sp-2_rotations_as_they_approach_gives_red-shift,_capital_gamma_>0
+  - opposite_sense_proton-electron_Sp-2_rotations_as_they_approach_gives_blue-shift,_capital_gamma_<0
+formula:
+  - nu_shift_value_can_be_plus_or_minus
+  - nu_shift = 2*k*pi*n^2*alpha^3*Ry/(sqr(2)*Y^2*sqr(1 + alpha^2/Y^2)*(1 - alpha^2)^(3/2)*dbar2^3)
+  - k=1_for_nS1/2_states_but_varies_for_other_sets_due_to_Sp-2_eccentricity_which_reduces_field_receptivity
+nature:
+  - effect_of_changing_Sp-2_field_at_electron_Sp-2_location_in_one_electron_Sp-2_time_period
+
+complete_calculation:
+formula:
+  - nu = E3D + nu_magnetic_potential + nu_shift
+
+
+  
