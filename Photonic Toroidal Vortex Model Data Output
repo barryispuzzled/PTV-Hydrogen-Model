@@ -1,0 +1,1128 @@
+
+09:21:52  Apr 17, 2026
+
+*** A program to calculate hydrogen atom hyperfine levels using the new photonic toroidal vortex (PTV) model ***
+              written in Python based on logic by Dr Barry R. Clarke
+
+ All equations and tables refer to the following papers.
+
+ PTV1: Clarke, Barry R., A photonic toroidal vortex model of the hydrogen atom fine structure, Quantum Studies:
+       Mathematics and Foundations, 12, article 18 (2025)
+ PTV2: Clarke, Barry R., The hydrogen atom hyperfine structure from a photonic toroidal vortex model,
+       under peer review (2026)
+
+ EXPERIMENTAL DATA
+ Horbatsch, M. and E. A. Hessels, Tabulation of the bound-state energies of atomic hydrogen, Physical Review A 93, 022513 (2016)
+
+_____________________________________________________________________________________________________
+
+1S1/2
+QUANTUM NUMBERS
+(1) Quantum Mechanics: n = 1 L = 0 Sp = 0.5   Sommerfeld: n(phi) = 1.0 n(r) = 0.0
+
+BOUND STATE DISTANCES (as a muliplier of a fixed radius for all states)
+(2) Horizontal distance between p-e Sp-2 centers  =  1.7324035537303599   PTV1 x-bar Eqs (84)/(86)
+(3) Shortest distance between p-e Sp-2 centers    =  2.0000332836086265   PTV1 d2-bar Eq (86)
+
+FINE STRUCTURE (ALL ENERGIES IN MHz)
+(4) Sommerfeld f-s energy no adjustments     = 3289885758.535001277924
+(5) New PTV f-s energy no adjustments        = 3289885758.260551452637   PTV1 Eq (54)
+(6) Sommerfeld f-s energy reduced mass        = 3288095006.026449680328
+(7) Relativistic reduced mass multiplier     =  0.9994556721742189   PTV2 (1 + Mr)^(-1) Eq (14)
+(8) New PTV f-s energy relativ. reduced mass = 3288095029.592941761017   PTV2 (D = 1) Eq (14)
+(9) Increased velocity D multiplier          =  1.0010895306506762   PTV2 Eq (15)
+(10) New PTV f-s energy with relativistic reduced mass 
+     and increased velocity                  = 3291677509.910019397736   PTV2 Eqs (14)/(15)
+
+EXIT POTENTIAL RED-SHIFT (ALL ENERGIES IN MHz)
+(11) Average h-f energy                        = 3288087212.213099956512   Horbatsch and Hessels (2016)
+(12) Difference between PTV f-s with corrections
+     and average h-f energy                    = 3590297.696919441223
+(13) Exit potential red-shift                  = 3590297.696917550173   PTV2 Eq (24) & Table 2
+(14) Adjusted f-s frequency after exit shift   = 3288087212.213101863861   PTV2 Eqs (14)/(15) minus (24)
+
+HYPERFINE SHIFT (ALL ENERGIES IN MHz)
+(15) Upper h-f energy from experiment      = 3288087922.415999889374       Horbatsch and Hessels (2016)
+(16) Upper h-f energy calculated from PTV  = 3288087922.619618892670       PTV2 Eqs (14)/(15) minus (24) plus (36)
+(17) Deviation of PTV from experiment is one part in 16148236997.495571136475
+(18) Lower h-f energy from experiment      = 3288086502.010200023651       Horbatsch and Hessels (2016)
+(19) Lower h-f energy calculated from PTV  = 3288086501.806584835052       PTV2 Eqs (14)/(15) minus (24) minus (36)
+(20) Deviation of PTV from experiment is one part in 16148532556.142906188965
+(21) H-f difference taken from experiment  =   1420.405799865723
+(22) H-f difference calculated from PTV    =   1420.813034436872       PTV2 twice Eq (36)
+
+_____________________________________________________________________________________________________
+
+2S1/2
+QUANTUM NUMBERS
+(1) Quantum Mechanics: n = 2 L = 0 Sp = 0.5   Sommerfeld: n(phi) = 1.0 n(r) = 1.0
+
+BOUND STATE DISTANCES (as a muliplier of a fixed radius for all states)
+(2) Horizontal distance between p-e Sp-2 centers  =  3.8732511083690198   PTV1 x-bar Eqs (84)/(86)
+(3) Shortest distance between p-e Sp-2 centers    =  4.0001231494850966   PTV1 d2-bar Eq (86)
+
+FINE STRUCTURE (ALL ENERGIES IN MHz)
+(4) Sommerfeld f-s energy no adjustments     = 822474177.055886387825
+(5) New PTV f-s energy no adjustments        = 822474177.045523405075   PTV1 Eq (54)
+(6) Sommerfeld f-s energy reduced mass        = 822026487.438713312149
+(7) Relativistic reduced mass multiplier     =  0.9994556776131162   PTV2 (1 + Mr)^(-1) Eq (14)
+(8) New PTV f-s energy relativ. reduced mass = 822026493.389650225639   PTV2 (D = 1) Eq (14)
+(9) Increased velocity D multiplier          =  1.0005446911734128   PTV2 Eq (15)
+(10) New PTV f-s energy with relativistic reduced mass 
+     and increased velocity                  = 822474243.964911103249   PTV2 Eqs (14)/(15)
+
+EXIT POTENTIAL RED-SHIFT (ALL ENERGIES IN MHz)
+(11) Average h-f energy                        = 822025488.313800096512   Horbatsch and Hessels (2016)
+(12) Difference between PTV f-s with corrections
+     and average h-f energy                    = 448755.651111006737
+(13) Exit potential red-shift                  = 448755.651107492915   PTV2 Eq (24) & Table 2
+(14) Adjusted f-s frequency after exit shift   = 822025488.313803553581   PTV2 Eqs (14)/(15) minus (24)
+
+HYPERFINE SHIFT (ALL ENERGIES IN MHz)
+(15) Upper h-f energy from experiment      = 822025577.092200040817       Horbatsch and Hessels (2016)
+(16) Upper h-f energy calculated from PTV  = 822025577.061932206154       PTV2 Eqs (14)/(15) minus (24) plus (36)
+(17) Deviation of PTV from experiment is one part in 27158387318.880077362061
+(18) Lower h-f energy from experiment      = 822025399.535400032997       Horbatsch and Hessels (2016)
+(19) Lower h-f energy calculated from PTV  = 822025399.565674901009       PTV2 Eqs (14)/(15) minus (24) minus (36)
+(20) Deviation of PTV from experiment is one part in 27152072115.519729614258
+(21) H-f difference taken from experiment  =    177.556800007820
+(22) H-f difference calculated from PTV    =    177.496257269293       PTV2 twice Eq (36)
+
+_____________________________________________________________________________________________________
+
+3S1/2
+QUANTUM NUMBERS
+(1) Quantum Mechanics: n = 3 L = 0 Sp = 0.5   Sommerfeld: n(phi) = 1.0 n(r) = 2.0
+
+BOUND STATE DISTANCES (as a muliplier of a fixed radius for all states)
+(2) Horizontal distance between p-e Sp-2 centers  =  5.9163991001174105   PTV1 x-bar Eqs (84)/(86)
+(3) Shortest distance between p-e Sp-2 centers    =  6.0002241103507821   PTV1 d2-bar Eq (86)
+
+FINE STRUCTURE (ALL ENERGIES IN MHz)
+(4) Sommerfeld f-s energy no adjustments     = 365542862.051823556423
+(5) New PTV f-s energy no adjustments        = 365542862.054545998573   PTV1 Eq (54)
+(6) Sommerfeld f-s energy reduced mass        = 365343889.550877511501
+(7) Relativistic reduced mass multiplier     =  0.9994556786197357   PTV2 (1 + Mr)^(-1) Eq (14)
+(8) New PTV f-s energy relativ. reduced mass = 365343891.025478422642   PTV2 (D = 1) Eq (14)
+(9) Increased velocity D multiplier          =  1.0003631109707365   PTV2 Eq (15)
+(10) New PTV f-s energy with relativistic reduced mass 
+     and increased velocity                  = 365476551.400401353836   PTV2 Eqs (14)/(15)
+
+EXIT POTENTIAL RED-SHIFT (ALL ENERGIES IN MHz)
+(11) Average h-f energy                        = 365343591.599599957466   Horbatsch and Hessels (2016)
+(12) Difference between PTV f-s with corrections
+     and average h-f energy                    = 132959.800801396370
+(13) Exit potential red-shift                  = 132959.849657143379   PTV2 Eq (24) & Table 2
+(14) Adjusted f-s frequency after exit shift   = 365343591.550744235516   PTV2 Eqs (14)/(15) minus (24)
+
+HYPERFINE SHIFT (ALL ENERGIES IN MHz)
+(15) Upper h-f energy from experiment      = 365343617.904299974442       Horbatsch and Hessels (2016)
+(16) Upper h-f energy calculated from PTV  = 365343617.841060042381       PTV2 Eqs (14)/(15) minus (24) plus (36)
+(17) Deviation of PTV from experiment is one part in 5777103263.746037483215
+(18) Lower h-f energy from experiment      = 365343565.294900000095       Horbatsch and Hessels (2016)
+(19) Lower h-f energy calculated from PTV  = 365343565.260428428650       PTV2 Eqs (14)/(15) minus (24) minus (36)
+(20) Deviation of PTV from experiment is one part in 10598401812.719299316406
+(21) H-f difference taken from experiment  =     52.609399974346
+(22) H-f difference calculated from PTV    =     52.580631632246       PTV2 twice Eq (36)
+
+_____________________________________________________________________________________________________
+
+4S1/2
+QUANTUM NUMBERS
+(1) Quantum Mechanics: n = 4 L = 0 Sp = 0.5   Sommerfeld: n(phi) = 1.0 n(r) = 3.0
+
+BOUND STATE DISTANCES (as a muliplier of a fixed radius for all states)
+(2) Horizontal distance between p-e Sp-2 centers  =  7.9376529632206507   PTV1 x-bar Eqs (84)/(86)
+(3) Shortest distance between p-e Sp-2 centers    =  8.0003278449754980   PTV1 d2-bar Eq (86)
+
+FINE STRUCTURE (ALL ENERGIES IN MHz)
+(4) Sommerfeld f-s energy no adjustments     = 205617346.644787788391
+(5) New PTV f-s energy no adjustments        = 205617346.640404611826   PTV1 Eq (54)
+(6) Sommerfeld f-s energy reduced mass        = 205505424.892383277416
+(7) Relativistic reduced mass multiplier     =  0.9994556789719774   PTV2 (1 + Mr)^(-1) Eq (14)
+(8) New PTV f-s energy relativ. reduced mass = 205505425.400275647640   PTV2 (D = 1) Eq (14)
+(9) Increased velocity D multiplier          =  1.0002723270487250   PTV2 Eq (15)
+(10) New PTV f-s energy with relativistic reduced mass 
+     and increased velocity                  = 205561390.086271882057   PTV2 Eqs (14)/(15)
+
+EXIT POTENTIAL RED-SHIFT (ALL ENERGIES IN MHz)
+(11) Average h-f energy                        = 205505298.855199992657   Horbatsch and Hessels (2016)
+(12) Difference between PTV f-s with corrections
+     and average h-f energy                    =  56091.231071889400
+(13) Exit potential red-shift                  =  56091.176620270955   PTV2 Eq (24) & Table 2
+(14) Adjusted f-s frequency after exit shift   = 205505298.909651607275   PTV2 Eqs (14)/(15) minus (24)
+
+HYPERFINE SHIFT (ALL ENERGIES IN MHz)
+(15) Upper h-f energy from experiment      = 205505309.952499985695       Horbatsch and Hessels (2016)
+(16) Upper h-f energy calculated from PTV  = 205505309.999716460705       PTV2 Eqs (14)/(15) minus (24) plus (36)
+(17) Deviation of PTV from experiment is one part in 4352406864.538953781128
+(18) Lower h-f energy from experiment      = 205505287.757899999619       Horbatsch and Hessels (2016)
+(19) Lower h-f energy calculated from PTV  = 205505287.819586753845       PTV2 Eqs (14)/(15) minus (24) minus (36)
+(20) Deviation of PTV from experiment is one part in 3331432984.830350399017
+(21) H-f difference taken from experiment  =     22.194599986076
+(22) H-f difference calculated from PTV    =     22.180129717001       PTV2 twice Eq (36)
+
+_____________________________________________________________________________________________________
+
+5S1/2
+QUANTUM NUMBERS
+(1) Quantum Mechanics: n = 5 L = 0 Sp = 0.5   Sommerfeld: n(phi) = 1.0 n(r) = 4.0
+
+BOUND STATE DISTANCES (as a muliplier of a fixed radius for all states)
+(2) Horizontal distance between p-e Sp-2 centers  =  9.9503639585056423   PTV1 x-bar Eqs (84)/(86)
+(3) Shortest distance between p-e Sp-2 centers    = 10.0004326891036470   PTV1 d2-bar Eq (86)
+
+FINE STRUCTURE (ALL ENERGIES IN MHz)
+(4) Sommerfeld f-s energy no adjustments     = 131594869.718334227800
+(5) New PTV f-s energy no adjustments        = 131594869.717837929726   PTV1 Eq (54)
+(6) Sommerfeld f-s energy reduced mass        = 131523239.923150837421
+(7) Relativistic reduced mass multiplier     =  0.9994556791349964   PTV2 (1 + Mr)^(-1) Eq (14)
+(8) New PTV f-s energy relativ. reduced mass = 131523240.143924146891   PTV2 (D = 1) Eq (14)
+(9) Increased velocity D multiplier          =  1.0002178586729034   PTV2 Eq (15)
+(10) New PTV f-s energy with relativistic reduced mass 
+     and increased velocity                  = 131551893.622477859259   PTV2 Eqs (14)/(15)
+
+EXIT POTENTIAL RED-SHIFT (ALL ENERGIES IN MHz)
+(11) Average h-f energy                        = 131523175.306400001049   Horbatsch and Hessels (2016)
+(12) Difference between PTV f-s with corrections
+     and average h-f energy                    =  28718.316077858210
+(13) Exit potential red-shift                  =  28718.227423988290   PTV2 Eq (24) & Table 2
+(14) Adjusted f-s frequency after exit shift   = 131523175.395053863525   PTV2 Eqs (14)/(15) minus (24)
+
+HYPERFINE SHIFT (ALL ENERGIES IN MHz)
+(15) Upper h-f energy from experiment      = 131523180.988199993968       Horbatsch and Hessels (2016)
+(16) Upper h-f energy calculated from PTV  = 131523181.072807192802       PTV2 Eqs (14)/(15) minus (24) plus (36)
+(17) Deviation of PTV from experiment is one part in 1554515251.658405542374
+(18) Lower h-f energy from experiment      = 131523169.624599993229       Horbatsch and Hessels (2016)
+(19) Lower h-f energy calculated from PTV  = 131523169.717300534248       PTV2 Eqs (14)/(15) minus (24) minus (36)
+(20) Deviation of PTV from experiment is one part in 1418796138.385201215744
+(21) H-f difference taken from experiment  =     11.363600000739
+(22) H-f difference calculated from PTV    =     11.355506646506       PTV2 twice Eq (36)
+
+_____________________________________________________________________________________________________
+
+6S1/2
+QUANTUM NUMBERS
+(1) Quantum Mechanics: n = 6 L = 0 Sp = 0.5   Sommerfeld: n(phi) = 1.0 n(r) = 5.0
+
+BOUND STATE DISTANCES (as a muliplier of a fixed radius for all states)
+(2) Horizontal distance between p-e Sp-2 centers  = 11.9588462377677036   PTV1 x-bar Eqs (84)/(86)
+(3) Shortest distance between p-e Sp-2 centers    = 12.0005380879832000   PTV1 d2-bar Eq (86)
+
+FINE STRUCTURE (ALL ENERGIES IN MHz)
+(4) Sommerfeld f-s energy no adjustments     = 91385208.595505297184
+(5) New PTV f-s energy no adjustments        = 91385208.586172163486   PTV1 Eq (54)
+(6) Sommerfeld f-s energy reduced mass        = 91335465.746194392443
+(7) Relativistic reduced mass multiplier     =  0.9994556792235435   PTV2 (1 + Mr)^(-1) Eq (14)
+(8) New PTV f-s energy relativ. reduced mass = 91335465.847252696753   PTV2 (D = 1) Eq (14)
+(9) Increased velocity D multiplier          =  1.0001815472462652   PTV2 Eq (15)
+(10) New PTV f-s energy with relativistic reduced mass 
+     and increased velocity                  = 91352047.549563616514   PTV2 Eqs (14)/(15)
+
+EXIT POTENTIAL RED-SHIFT (ALL ENERGIES IN MHz)
+(11) Average h-f energy                        = 91335428.313649997115   Horbatsch and Hessels (2016)
+(12) Difference between PTV f-s with corrections
+     and average h-f energy                    =  16619.235913619399
+(13) Exit potential red-shift                  =  16619.144287324030   PTV2 Eq (24) & Table 2
+(14) Adjusted f-s frequency after exit shift   = 91335428.405276298523   PTV2 Eqs (14)/(15) minus (24)
+
+HYPERFINE SHIFT (ALL ENERGIES IN MHz)
+(15) Upper h-f energy from experiment      = 91335431.601699993014       Horbatsch and Hessels (2016)
+(16) Upper h-f energy calculated from PTV  = 91335431.690873637795       PTV2 Eqs (14)/(15) minus (24) plus (36)
+(17) Deviation of PTV from experiment is one part in 1024242440.980108976364
+(18) Lower h-f energy from experiment      = 91335425.025600001216       Horbatsch and Hessels (2016)
+(19) Lower h-f energy calculated from PTV  = 91335425.119678959250       PTV2 Eqs (14)/(15) minus (24) minus (36)
+(20) Deviation of PTV from experiment is one part in 970837974.120537757874
+(21) H-f difference taken from experiment  =      6.576099991798
+(22) H-f difference calculated from PTV    =      6.571194677131       PTV2 twice Eq (36)
+
+_____________________________________________________________________________________________________
+
+2P1/2
+QUANTUM NUMBERS
+(1) Quantum Mechanics: n = 2 L = 1 Sp = -0.5   Sommerfeld: n(phi) = 1.0 n(r) = 1.0
+
+BOUND STATE DISTANCES (as a muliplier of a fixed radius for all states)
+(2) Horizontal distance between p-e Sp-2 centers  =  3.8732511083690198   PTV1 x-bar Eqs (84)/(86)
+(3) Shortest distance between p-e Sp-2 centers    =  4.0001231494850966   PTV1 d2-bar Eq (86)
+
+FINE STRUCTURE (ALL ENERGIES IN MHz)
+(4) Sommerfeld f-s energy no adjustments     = 822474177.055886387825
+(5) New PTV f-s energy no adjustments        = 822474177.045523405075   PTV1 Eq (54)
+(6) Sommerfeld f-s energy reduced mass        = 822026487.438713312149
+(7) Relativistic reduced mass multiplier     =  0.9994556776136092   PTV2 (1 + Mr)^(-1) Eq (14)
+(8) New PTV f-s energy relativ. reduced mass = 822026489.664138793945   PTV2 (D = 1) Eq (14)
+(9) Increased velocity D multiplier          =  1.0002723270487250   PTV2 Eq (15)
+(10) New PTV f-s energy with relativistic reduced mass 
+     and increased velocity                  = 822250349.712042808533   PTV2 Eqs (14)/(15)
+
+EXIT POTENTIAL RED-SHIFT (ALL ENERGIES IN MHz)
+(11) Average h-f energy                        = 822026516.551150083542   Horbatsch and Hessels (2016)
+(12) Difference between PTV f-s with corrections
+     and average h-f energy                    = 223833.160892724991
+(13) Exit potential red-shift                  = 223833.160892540531   PTV2 Eq (24) & Table 2
+(14) Adjusted f-s frequency after exit shift   = 822026516.551150321960   PTV2 Eqs (14)/(15) minus (24)
+
+HYPERFINE SHIFT (ALL ENERGIES IN MHz)
+(15) Upper h-f energy from experiment      = 822026546.135900020599       Horbatsch and Hessels (2016)
+(16) Upper h-f energy calculated from PTV  = 822026546.125806927681       PTV2 Eqs (14)/(15) minus (24) plus (36)
+(17) Deviation of PTV from experiment is one part in 81444464326.455169677734
+(18) Lower h-f energy from experiment      = 822026486.966400027275       Horbatsch and Hessels (2016)
+(19) Lower h-f energy calculated from PTV  = 822026486.976493716240       PTV2 Eqs (14)/(15) minus (24) minus (36)
+(20) Deviation of PTV from experiment is one part in 81439649054.920623779297
+(21) H-f difference taken from experiment  =     59.169499993324
+(22) H-f difference calculated from PTV    =     59.149313324879       PTV2 twice Eq (36)
+
+_____________________________________________________________________________________________________
+
+3P1/2
+QUANTUM NUMBERS
+(1) Quantum Mechanics: n = 3 L = 1 Sp = -0.5   Sommerfeld: n(phi) = 1.0 n(r) = 2.0
+
+BOUND STATE DISTANCES (as a muliplier of a fixed radius for all states)
+(2) Horizontal distance between p-e Sp-2 centers  =  5.9163991001174105   PTV1 x-bar Eqs (84)/(86)
+(3) Shortest distance between p-e Sp-2 centers    =  6.0002241103507821   PTV1 d2-bar Eq (86)
+
+FINE STRUCTURE (ALL ENERGIES IN MHz)
+(4) Sommerfeld f-s energy no adjustments     = 365542862.051823556423
+(5) New PTV f-s energy no adjustments        = 365542862.054545998573   PTV1 Eq (54)
+(6) Sommerfeld f-s energy reduced mass        = 365343889.550877511501
+(7) Relativistic reduced mass multiplier     =  0.9994556786198819   PTV2 (1 + Mr)^(-1) Eq (14)
+(8) New PTV f-s energy relativ. reduced mass = 365343890.142415881157   PTV2 (D = 1) Eq (14)
+(9) Increased velocity D multiplier          =  1.0001815472462652   PTV2 Eq (15)
+(10) New PTV f-s energy with relativistic reduced mass 
+     and increased velocity                  = 365410217.319611072540   PTV2 Eqs (14)/(15)
+
+EXIT POTENTIAL RED-SHIFT (ALL ENERGIES IN MHz)
+(11) Average h-f energy                        = 365343897.705099999905   Horbatsch and Hessels (2016)
+(12) Difference between PTV f-s with corrections
+     and average h-f energy                    =  66319.614511072636
+(13) Exit potential red-shift                  =  66319.584484752864   PTV2 Eq (24) & Table 2
+(14) Adjusted f-s frequency after exit shift   = 365343897.735126316547   PTV2 Eqs (14)/(15) minus (24)
+
+HYPERFINE SHIFT (ALL ENERGIES IN MHz)
+(15) Upper h-f energy from experiment      = 365343906.471000015736       Horbatsch and Hessels (2016)
+(16) Upper h-f energy calculated from PTV  = 365343906.496974349022       PTV2 Eqs (14)/(15) minus (24) plus (36)
+(17) Deviation of PTV from experiment is one part in 14065573981.985660552979
+(18) Lower h-f energy from experiment      = 365343888.939199984074       Horbatsch and Hessels (2016)
+(19) Lower h-f energy calculated from PTV  = 365343888.973278284073       PTV2 Eqs (14)/(15) minus (24) minus (36)
+(20) Deviation of PTV from experiment is one part in 10720719312.506175994873
+(21) H-f difference taken from experiment  =     17.531800031662
+(22) H-f difference calculated from PTV    =     17.523696120735       PTV2 twice Eq (36)
+
+_____________________________________________________________________________________________________
+
+4P1/2
+QUANTUM NUMBERS
+(1) Quantum Mechanics: n = 4 L = 1 Sp = -0.5   Sommerfeld: n(phi) = 1.0 n(r) = 3.0
+
+BOUND STATE DISTANCES (as a muliplier of a fixed radius for all states)
+(2) Horizontal distance between p-e Sp-2 centers  =  7.9376529632206507   PTV1 x-bar Eqs (84)/(86)
+(3) Shortest distance between p-e Sp-2 centers    =  8.0003278449754980   PTV1 d2-bar Eq (86)
+
+FINE STRUCTURE (ALL ENERGIES IN MHz)
+(4) Sommerfeld f-s energy no adjustments     = 205617346.644787788391
+(5) New PTV f-s energy no adjustments        = 205617346.640404611826   PTV1 Eq (54)
+(6) Sommerfeld f-s energy reduced mass        = 205505424.892383277416
+(7) Relativistic reduced mass multiplier     =  0.9994556789720389   PTV2 (1 + Mr)^(-1) Eq (14)
+(8) New PTV f-s energy relativ. reduced mass = 205505425.097591161728   PTV2 (D = 1) Eq (14)
+(9) Increased velocity D multiplier          =  1.0001361588898672   PTV2 Eq (15)
+(10) New PTV f-s energy with relativistic reduced mass 
+     and increased velocity                  = 205533406.488134145737   PTV2 Eqs (14)/(15)
+
+EXIT POTENTIAL RED-SHIFT (ALL ENERGIES IN MHz)
+(11) Average h-f energy                        = 205505428.231799989939   Horbatsch and Hessels (2016)
+(12) Difference between PTV f-s with corrections
+     and average h-f energy                    =  27978.256334155798
+(13) Exit potential red-shift                  =  27978.256333992900   PTV2 Eq (24) & Table 2
+(14) Adjusted f-s frequency after exit shift   = 205505428.231800138950   PTV2 Eqs (14)/(15) minus (24)
+
+HYPERFINE SHIFT (ALL ENERGIES IN MHz)
+(15) Upper h-f energy from experiment      = 205505431.929899990559       Horbatsch and Hessels (2016)
+(16) Upper h-f energy calculated from PTV  = 205505431.927985191345       PTV2 Eqs (14)/(15) minus (24) plus (36)
+(17) Deviation of PTV from experiment is one part in 107324794417.470169067383
+(18) Lower h-f energy from experiment      = 205505424.533699989319       Horbatsch and Hessels (2016)
+(19) Lower h-f energy calculated from PTV  = 205505424.535615086555       PTV2 Eqs (14)/(15) minus (24) minus (36)
+(20) Deviation of PTV from experiment is one part in 107308088906.740859985352
+(21) H-f difference taken from experiment  =      7.396200001240
+(22) H-f difference calculated from PTV    =      7.392370103947       PTV2 twice Eq (36)
+
+_____________________________________________________________________________________________________
+
+5P1/2
+QUANTUM NUMBERS
+(1) Quantum Mechanics: n = 5 L = 1 Sp = -0.5   Sommerfeld: n(phi) = 1.0 n(r) = 4.0
+
+BOUND STATE DISTANCES (as a muliplier of a fixed radius for all states)
+(2) Horizontal distance between p-e Sp-2 centers  =  9.9503639585056423   PTV1 x-bar Eqs (84)/(86)
+(3) Shortest distance between p-e Sp-2 centers    = 10.0004326891036470   PTV1 d2-bar Eq (86)
+
+FINE STRUCTURE (ALL ENERGIES IN MHz)
+(4) Sommerfeld f-s energy no adjustments     = 131594869.718334227800
+(5) New PTV f-s energy no adjustments        = 131594869.717837929726   PTV1 Eq (54)
+(6) Sommerfeld f-s energy reduced mass        = 131523239.923150837421
+(7) Relativistic reduced mass multiplier     =  0.9994556791350279   PTV2 (1 + Mr)^(-1) Eq (14)
+(8) New PTV f-s energy relativ. reduced mass = 131523240.014224231243   PTV2 (D = 1) Eq (14)
+(9) Increased velocity D multiplier          =  1.0001089263703744   PTV2 Eq (15)
+(10) New PTV f-s energy with relativistic reduced mass 
+     and increased velocity                  = 131537566.363378867507   PTV2 Eqs (14)/(15)
+
+EXIT POTENTIAL RED-SHIFT (ALL ENERGIES IN MHz)
+(11) Average h-f energy                        = 131523241.607050001621   Horbatsch and Hessels (2016)
+(12) Difference between PTV f-s with corrections
+     and average h-f energy                    =  14324.756328865886
+(13) Exit potential red-shift                  =  14324.763432712300   PTV2 Eq (24) & Table 2
+(14) Adjusted f-s frequency after exit shift   = 131523241.599946156144   PTV2 Eqs (14)/(15) minus (24)
+
+HYPERFINE SHIFT (ALL ENERGIES IN MHz)
+(15) Upper h-f energy from experiment      = 131523243.500499993563       Horbatsch and Hessels (2016)
+(16) Upper h-f energy calculated from PTV  = 131523243.492324471474       PTV2 Eqs (14)/(15) minus (24) plus (36)
+(17) Deviation of PTV from experiment is one part in 16087442742.939830780029
+(18) Lower h-f energy from experiment      = 131523239.713599994779       Horbatsch and Hessels (2016)
+(19) Lower h-f energy calculated from PTV  = 131523239.707567840815       PTV2 Eqs (14)/(15) minus (24) minus (36)
+(20) Deviation of PTV from experiment is one part in 21803694086.325176239014
+(21) H-f difference taken from experiment  =      3.786899998784
+(22) H-f difference calculated from PTV    =      3.784756644816       PTV2 twice Eq (36)
+
+_____________________________________________________________________________________________________
+
+6P1/2
+QUANTUM NUMBERS
+(1) Quantum Mechanics: n = 6 L = 1 Sp = -0.5   Sommerfeld: n(phi) = 1.0 n(r) = 5.0
+
+BOUND STATE DISTANCES (as a muliplier of a fixed radius for all states)
+(2) Horizontal distance between p-e Sp-2 centers  = 11.9588462377677036   PTV1 x-bar Eqs (84)/(86)
+(3) Shortest distance between p-e Sp-2 centers    = 12.0005380879832000   PTV1 d2-bar Eq (86)
+
+FINE STRUCTURE (ALL ENERGIES IN MHz)
+(4) Sommerfeld f-s energy no adjustments     = 91385208.595505297184
+(5) New PTV f-s energy no adjustments        = 91385208.586172163486   PTV1 Eq (54)
+(6) Sommerfeld f-s energy reduced mass        = 91335465.746194392443
+(7) Relativistic reduced mass multiplier     =  0.9994556792235618   PTV2 (1 + Mr)^(-1) Eq (14)
+(8) New PTV f-s energy relativ. reduced mass = 91335465.782865524292   PTV2 (D = 1) Eq (14)
+(9) Increased velocity D multiplier          =  1.0000907715633571   PTV2 Eq (15)
+(10) New PTV f-s energy with relativistic reduced mass 
+     and increased velocity                  = 91343756.445884585381   PTV2 Eqs (14)/(15)
+
+EXIT POTENTIAL RED-SHIFT (ALL ENERGIES IN MHz)
+(11) Average h-f energy                        = 91335466.701499998569   Horbatsch and Hessels (2016)
+(12) Difference between PTV f-s with corrections
+     and average h-f energy                    =   8289.744384586811
+(13) Exit potential red-shift                  =   8289.751976972830   PTV2 Eq (24) & Table 2
+(14) Adjusted f-s frequency after exit shift   = 91335466.693907618523   PTV2 Eqs (14)/(15) minus (24)
+
+HYPERFINE SHIFT (ALL ENERGIES IN MHz)
+(15) Upper h-f energy from experiment      = 91335467.797199994326       Horbatsch and Hessels (2016)
+(16) Upper h-f energy calculated from PTV  = 91335467.789007335901       PTV2 Eqs (14)/(15) minus (24) plus (36)
+(17) Deviation of PTV from experiment is one part in 11148453049.797515869141
+(18) Lower h-f energy from experiment      = 91335465.605800002813       Horbatsch and Hessels (2016)
+(19) Lower h-f energy calculated from PTV  = 91335465.598807901144       PTV2 Eqs (14)/(15) minus (24) minus (36)
+(20) Deviation of PTV from experiment is one part in 13062662690.771963119507
+(21) H-f difference taken from experiment  =      2.191399991512
+(22) H-f difference calculated from PTV    =      2.190199426907       PTV2 twice Eq (36)
+
+_____________________________________________________________________________________________________
+
+7P1/2
+QUANTUM NUMBERS
+(1) Quantum Mechanics: n = 7 L = 1 Sp = -0.5   Sommerfeld: n(phi) = 1.0 n(r) = 6.0
+
+BOUND STATE DISTANCES (as a muliplier of a fixed radius for all states)
+(2) Horizontal distance between p-e Sp-2 centers  = 13.9649244845825677   PTV1 x-bar Eqs (84)/(86)
+(3) Shortest distance between p-e Sp-2 centers    = 14.0006438038633938   PTV1 d2-bar Eq (86)
+
+FINE STRUCTURE (ALL ENERGIES IN MHz)
+(4) Sommerfeld f-s energy no adjustments     = 67140087.867506653070
+(5) New PTV f-s energy no adjustments        = 67140087.880926594138   PTV1 Eq (54)
+(6) Sommerfeld f-s energy reduced mass        = 67103542.136257112026
+(7) Relativistic reduced mass multiplier     =  0.9994556792769436   PTV2 (1 + Mr)^(-1) Eq (14)
+(8) New PTV f-s energy relativ. reduced mass = 67103542.175208196044   PTV2 (D = 1) Eq (14)
+(9) Increased velocity D multiplier          =  1.0000778039449458   PTV2 Eq (15)
+(10) New PTV f-s energy with relativistic reduced mass 
+     and increased velocity                  = 67108763.095509268343   PTV2 Eqs (14)/(15)
+
+EXIT POTENTIAL RED-SHIFT (ALL ENERGIES IN MHz)
+(11) Average h-f energy                        = 67103542.752549998462   Horbatsch and Hessels (2016)
+(12) Difference between PTV f-s with corrections
+     and average h-f energy                    =   5220.342959269881
+(13) Exit potential red-shift                  =   5220.349276988955   PTV2 Eq (24) & Table 2
+(14) Adjusted f-s frequency after exit shift   = 67103542.746232278645   PTV2 Eqs (14)/(15) minus (24)
+
+HYPERFINE SHIFT (ALL ENERGIES IN MHz)
+(15) Upper h-f energy from experiment      = 67103543.442299999297       Horbatsch and Hessels (2016)
+(16) Upper h-f energy calculated from PTV  = 67103543.435845702887       PTV2 Eqs (14)/(15) minus (24) plus (36)
+(17) Deviation of PTV from experiment is one part in 10396724782.806970596313
+(18) Lower h-f energy from experiment      = 67103542.062799997628       Horbatsch and Hessels (2016)
+(19) Lower h-f energy calculated from PTV  = 67103542.056618854403       PTV2 Eqs (14)/(15) minus (24) minus (36)
+(20) Deviation of PTV from experiment is one part in 10856170068.937004089355
+(21) H-f difference taken from experiment  =      1.379500001669
+(22) H-f difference calculated from PTV    =      1.379226850263       PTV2 twice Eq (36)
+
+_____________________________________________________________________________________________________
+
+2P3/2
+QUANTUM NUMBERS
+(1) Quantum Mechanics: n = 2 L = 1 Sp = 0.5   Sommerfeld: n(phi) = 2.0 n(r) = 0.0
+
+BOUND STATE DISTANCES (as a muliplier of a fixed radius for all states)
+(2) Horizontal distance between p-e Sp-2 centers  =  3.8733061076133599   PTV1 x-bar Eqs (84)/(86)
+(3) Shortest distance between p-e Sp-2 centers    =  4.0001764043401487   PTV1 d2-bar Eq (86)
+
+FINE STRUCTURE (ALL ENERGIES IN MHz)
+(4) Sommerfeld f-s energy no adjustments     = 822463227.394777178764
+(5) New PTV f-s energy no adjustments        = 822463227.397311449051   PTV1 Eq (54)
+(6) Sommerfeld f-s energy reduced mass        = 822015543.737729907036
+(7) Relativistic reduced mass multiplier     =  0.9994556776136334   PTV2 (1 + Mr)^(-1) Eq (14)
+(8) New PTV f-s energy relativ. reduced mass = 822015542.995724320412   PTV2 (D = 1) Eq (14)
+(9) Increased velocity D multiplier          =  1.0002723270487250   PTV2 Eq (15)
+(10) New PTV f-s energy with relativistic reduced mass 
+     and increased velocity                  = 822239400.062554478645   PTV2 Eqs (14)/(15)
+
+EXIT POTENTIAL RED-SHIFT (ALL ENERGIES IN MHz)
+(11) Average h-f energy                        = 822015535.670900106430   Horbatsch and Hessels (2016)
+(12) Difference between PTV f-s with corrections
+     and average h-f energy                    = 223864.391654372215
+(13) Exit potential red-shift                  = 223864.391654079489   PTV2 Eq (24) & Table 2
+(14) Adjusted f-s frequency after exit shift   = 822015535.670900344849   PTV2 Eqs (14)/(15) minus (24)
+
+HYPERFINE SHIFT (ALL ENERGIES IN MHz)
+(15) Upper h-f energy from experiment      = 822015547.496700048447       Horbatsch and Hessels (2016)
+(16) Upper h-f energy calculated from PTV  = 822015547.500133037567       PTV2 Eqs (14)/(15) minus (24) plus (36)
+(17) Deviation of PTV from experiment is one part in 239446010065.115570068359
+(18) Lower h-f energy from experiment      = 822015523.845100045204       Horbatsch and Hessels (2016)
+(19) Lower h-f energy calculated from PTV  = 822015523.841667652130       PTV2 Eqs (14)/(15) minus (24) minus (36)
+(20) Deviation of PTV from experiment is one part in 239487583768.665893554688
+(21) H-f difference taken from experiment  =     23.651600003242
+(22) H-f difference calculated from PTV    =     23.658465415959       PTV2 twice Eq (36)
+
+_____________________________________________________________________________________________________
+
+3P3/2
+QUANTUM NUMBERS
+(1) Quantum Mechanics: n = 3 L = 1 Sp = 0.5   Sommerfeld: n(phi) = 2.0 n(r) = 1.0
+
+BOUND STATE DISTANCES (as a muliplier of a fixed radius for all states)
+(2) Horizontal distance between p-e Sp-2 centers  =  5.9164531096983408   PTV1 x-bar Eqs (84)/(86)
+(3) Shortest distance between p-e Sp-2 centers    =  6.0002773654076931   PTV1 d2-bar Eq (86)
+
+FINE STRUCTURE (ALL ENERGIES IN MHz)
+(4) Sommerfeld f-s energy no adjustments     = 365539617.722525060177
+(5) New PTV f-s energy no adjustments        = 365539617.710735797882   PTV1 Eq (54)
+(6) Sommerfeld f-s energy reduced mass        = 365340646.987534224987
+(7) Relativistic reduced mass multiplier     =  0.9994556786198890   PTV2 (1 + Mr)^(-1) Eq (14)
+(8) New PTV f-s energy relativ. reduced mass = 365340646.975872814655   PTV2 (D = 1) Eq (14)
+(9) Increased velocity D multiplier          =  1.0001815472462652   PTV2 Eq (15)
+(10) New PTV f-s energy with relativistic reduced mass 
+     and increased velocity                  = 365406973.564280033112   PTV2 Eqs (14)/(15)
+
+EXIT POTENTIAL RED-SHIFT (ALL ENERGIES IN MHz)
+(11) Average h-f energy                        = 365340644.107949972153   Horbatsch and Hessels (2016)
+(12) Difference between PTV f-s with corrections
+     and average h-f energy                    =  66329.456330060959
+(13) Exit potential red-shift                  =  66329.462399309996   PTV2 Eq (24) & Table 2
+(14) Adjusted f-s frequency after exit shift   = 365340644.101880729198   PTV2 Eqs (14)/(15) minus (24)
+
+HYPERFINE SHIFT (ALL ENERGIES IN MHz)
+(15) Upper h-f energy from experiment      = 365340647.611899971962       Horbatsch and Hessels (2016)
+(16) Upper h-f energy calculated from PTV  = 365340647.606495559216       PTV2 Eqs (14)/(15) minus (24) plus (36)
+(17) Deviation of PTV from experiment is one part in 67600434081.070350646973
+(18) Lower h-f energy from experiment      = 365340640.603999972343       Horbatsch and Hessels (2016)
+(19) Lower h-f energy calculated from PTV  = 365340640.597265899181       PTV2 Eqs (14)/(15) minus (24) minus (36)
+(20) Deviation of PTV from experiment is one part in 54252549951.687286376953
+(21) H-f difference taken from experiment  =      7.007899999619
+(22) H-f difference calculated from PTV    =      7.009229603041       PTV2 twice Eq (36)
+
+_____________________________________________________________________________________________________
+
+4P3/2
+QUANTUM NUMBERS
+(1) Quantum Mechanics: n = 4 L = 1 Sp = 0.5   Sommerfeld: n(phi) = 2.0 n(r) = 2.0
+
+BOUND STATE DISTANCES (as a muliplier of a fixed radius for all states)
+(2) Horizontal distance between p-e Sp-2 centers  =  7.9377066388691304   PTV1 x-bar Eqs (84)/(86)
+(3) Shortest distance between p-e Sp-2 centers    =  8.0003811001296548   PTV1 d2-bar Eq (86)
+
+FINE STRUCTURE (ALL ENERGIES IN MHz)
+(4) Sommerfeld f-s energy no adjustments     = 205615977.950866907835
+(5) New PTV f-s energy no adjustments        = 205615977.934378176928   PTV1 Eq (54)
+(6) Sommerfeld f-s energy reduced mass        = 205504056.943470656872
+(7) Relativistic reduced mass multiplier     =  0.9994556789720420   PTV2 (1 + Mr)^(-1) Eq (14)
+(8) New PTV f-s energy relativ. reduced mass = 205504056.950314670801   PTV2 (D = 1) Eq (14)
+(9) Increased velocity D multiplier          =  1.0001361588898672   PTV2 Eq (15)
+(10) New PTV f-s energy with relativistic reduced mass 
+     and increased velocity                  = 205532038.154572218657   PTV2 Eqs (14)/(15)
+
+EXIT POTENTIAL RED-SHIFT (ALL ENERGIES IN MHz)
+(11) Average h-f energy                        = 205504055.622150003910   Horbatsch and Hessels (2016)
+(12) Difference between PTV f-s with corrections
+     and average h-f energy                    =  27982.532422214746
+(13) Exit potential red-shift                  =  27982.532421960699   PTV2 Eq (24) & Table 2
+(14) Adjusted f-s frequency after exit shift   = 205504055.622150272131   PTV2 Eqs (14)/(15) minus (24)
+
+HYPERFINE SHIFT (ALL ENERGIES IN MHz)
+(15) Upper h-f energy from experiment      = 205504057.100400000811       Horbatsch and Hessels (2016)
+(16) Upper h-f energy calculated from PTV  = 205504057.100584924221       PTV2 Eqs (14)/(15) minus (24) plus (36)
+(17) Deviation of PTV from experiment is one part in 1111292813811.360107421875
+(18) Lower h-f energy from experiment      = 205504054.143900007010       Horbatsch and Hessels (2016)
+(19) Lower h-f energy calculated from PTV  = 205504054.143715620041       PTV2 Eqs (14)/(15) minus (24) minus (36)
+(20) Deviation of PTV from experiment is one part in 1114525910860.806640625000
+(21) H-f difference taken from experiment  =      2.956499993801
+(22) H-f difference calculated from PTV    =      2.956869309762       PTV2 twice Eq (36)
+
+_____________________________________________________________________________________________________
+
+5P3/2
+QUANTUM NUMBERS
+(1) Quantum Mechanics: n = 5 L = 1 Sp = 0.5   Sommerfeld: n(phi) = 2.0 n(r) = 3.0
+
+BOUND STATE DISTANCES (as a muliplier of a fixed radius for all states)
+(2) Horizontal distance between p-e Sp-2 centers  =  9.9504174816877118   PTV1 x-bar Eqs (84)/(86)
+(3) Shortest distance between p-e Sp-2 centers    = 10.0004859443149634   PTV1 d2-bar Eq (86)
+
+FINE STRUCTURE (ALL ENERGIES IN MHz)
+(4) Sommerfeld f-s energy no adjustments     = 131594168.930585384369
+(5) New PTV f-s energy no adjustments        = 131594168.941192030907   PTV1 Eq (54)
+(6) Sommerfeld f-s energy reduced mass        = 131522539.516855180264
+(7) Relativistic reduced mass multiplier     =  0.9994556791350294   PTV2 (1 + Mr)^(-1) Eq (14)
+(8) New PTV f-s energy relativ. reduced mass = 131522539.542731940746   PTV2 (D = 1) Eq (14)
+(9) Increased velocity D multiplier          =  1.0001089263703744   PTV2 Eq (15)
+(10) New PTV f-s energy with relativistic reduced mass 
+     and increased velocity                  = 131536865.815586760640   PTV2 Eqs (14)/(15)
+
+EXIT POTENTIAL RED-SHIFT (ALL ENERGIES IN MHz)
+(11) Average h-f energy                        = 131522538.831750005484   Horbatsch and Hessels (2016)
+(12) Difference between PTV f-s with corrections
+     and average h-f energy                    =  14326.983836755157
+(13) Exit potential red-shift                  =  14326.979265540936   PTV2 Eq (24) & Table 2
+(14) Adjusted f-s frequency after exit shift   = 131522538.836321219802   PTV2 Eqs (14)/(15) minus (24)
+
+HYPERFINE SHIFT (ALL ENERGIES IN MHz)
+(15) Upper h-f energy from experiment      = 131522539.588599994779       Horbatsch and Hessels (2016)
+(16) Upper h-f energy calculated from PTV  = 131522539.593256428838       PTV2 Eqs (14)/(15) minus (24) plus (36)
+(17) Deviation of PTV from experiment is one part in 28245334931.856498718262
+(18) Lower h-f energy from experiment      = 131522538.074900001287       Horbatsch and Hessels (2016)
+(19) Lower h-f energy calculated from PTV  = 131522538.079386010766       PTV2 Eqs (14)/(15) minus (24) minus (36)
+(20) Deviation of PTV from experiment is one part in 29318381671.554939270020
+(21) H-f difference taken from experiment  =      1.513699993491
+(22) H-f difference calculated from PTV    =      1.513870410471       PTV2 twice Eq (36)
+
+_____________________________________________________________________________________________________
+
+6P3/2
+QUANTUM NUMBERS
+(1) Quantum Mechanics: n = 6 L = 1 Sp = 0.5   Sommerfeld: n(phi) = 2.0 n(r) = 4.0
+
+BOUND STATE DISTANCES (as a muliplier of a fixed radius for all states)
+(2) Horizontal distance between p-e Sp-2 centers  = 11.9588996786783515   PTV1 x-bar Eqs (84)/(86)
+(3) Shortest distance between p-e Sp-2 centers    = 12.0005913432321289   PTV1 d2-bar Eq (86)
+
+FINE STRUCTURE (ALL ENERGIES IN MHz)
+(4) Sommerfeld f-s energy no adjustments     = 91384803.042339920998
+(5) New PTV f-s energy no adjustments        = 91384803.044545650482   PTV1 Eq (54)
+(6) Sommerfeld f-s energy reduced mass        = 91335060.413779944181
+(7) Relativistic reduced mass multiplier     =  0.9994556792235627   PTV2 (1 + Mr)^(-1) Eq (14)
+(8) New PTV f-s energy relativ. reduced mass = 91335060.425191074610   PTV2 (D = 1) Eq (14)
+(9) Increased velocity D multiplier          =  1.0000907715633571   PTV2 Eq (15)
+(10) New PTV f-s energy with relativistic reduced mass 
+     and increased velocity                  = 91343351.051415190101   PTV2 Eqs (14)/(15)
+
+EXIT POTENTIAL RED-SHIFT (ALL ENERGIES IN MHz)
+(11) Average h-f energy                        = 91335060.003300011158   Horbatsch and Hessels (2016)
+(12) Difference between PTV f-s with corrections
+     and average h-f energy                    =   8291.048115178943
+(13) Exit potential red-shift                  =   8291.041827197487   PTV2 Eq (24) & Table 2
+(14) Adjusted f-s frequency after exit shift   = 91335060.009587988257   PTV2 Eqs (14)/(15) minus (24)
+
+HYPERFINE SHIFT (ALL ENERGIES IN MHz)
+(15) Upper h-f energy from experiment      = 91335060.441300004721       Horbatsch and Hessels (2016)
+(16) Upper h-f energy calculated from PTV  = 91335060.447620093822       PTV2 Eqs (14)/(15) minus (24) plus (36)
+(17) Deviation of PTV from experiment is one part in 14451546326.366153717041
+(18) Lower h-f energy from experiment      = 91335059.565300002694       Horbatsch and Hessels (2016)
+(19) Lower h-f energy calculated from PTV  = 91335059.571555882692       PTV2 Eqs (14)/(15) minus (24) minus (36)
+(20) Deviation of PTV from experiment is one part in 14599873973.202207565308
+(21) H-f difference taken from experiment  =      0.876000002027
+(22) H-f difference calculated from PTV    =      0.876064219685       PTV2 twice Eq (36)
+
+_____________________________________________________________________________________________________
+
+7P3/2
+QUANTUM NUMBERS
+(1) Quantum Mechanics: n = 7 L = 2 Sp = -0.5   Sommerfeld: n(phi) = 2.0 n(r) = 5.0
+
+BOUND STATE DISTANCES (as a muliplier of a fixed radius for all states)
+(2) Horizontal distance between p-e Sp-2 centers  = 13.9649778760733305   PTV1 x-bar Eqs (84)/(86)
+(3) Shortest distance between p-e Sp-2 centers    = 14.0006970591389610   PTV1 d2-bar Eq (86)
+
+FINE STRUCTURE (ALL ENERGIES IN MHz)
+(4) Sommerfeld f-s energy no adjustments     = 67139832.496862411499
+(5) New PTV f-s energy no adjustments        = 67139832.496326163411   PTV1 Eq (54)
+(6) Sommerfeld f-s energy reduced mass        = 67103286.904616363347
+(7) Relativistic reduced mass multiplier     =  0.9994556792769442   PTV2 (1 + Mr)^(-1) Eq (14)
+(8) New PTV f-s energy relativ. reduced mass = 67103286.909759238362   PTV2 (D = 1) Eq (14)
+(9) Increased velocity D multiplier          =  1.0000778039449458   PTV2 Eq (15)
+(10) New PTV f-s energy with relativistic reduced mass 
+     and increased velocity                  = 67108507.810199648142   PTV2 Eqs (14)/(15)
+
+EXIT POTENTIAL RED-SHIFT (ALL ENERGIES IN MHz)
+(11) Average h-f energy                        = 67103286.639850005507   Horbatsch and Hessels (2016)
+(12) Difference between PTV f-s with corrections
+     and average h-f energy                    =   5221.170349642634
+(13) Exit potential red-shift                  =   5221.163734941137   PTV2 Eq (24) & Table 2
+(14) Adjusted f-s frequency after exit shift   = 67103286.646464705467   PTV2 Eqs (14)/(15) minus (24)
+
+HYPERFINE SHIFT (ALL ENERGIES IN MHz)
+(15) Upper h-f energy from experiment      = 67103286.915700003505       Horbatsch and Hessels (2016)
+(16) Upper h-f energy calculated from PTV  = 67103286.922305881977       PTV2 Eqs (14)/(15) minus (24) plus (36)
+(17) Deviation of PTV from experiment is one part in 10158117076.599809646606
+(18) Lower h-f energy from experiment      = 67103286.364000000060       Horbatsch and Hessels (2016)
+(19) Lower h-f energy calculated from PTV  = 67103286.370623528957       PTV2 Eqs (14)/(15) minus (24) minus (36)
+(20) Deviation of PTV from experiment is one part in 10131047572.944124221802
+(21) H-f difference taken from experiment  =      0.551700003445
+(22) H-f difference calculated from PTV    =      0.551682346159       PTV2 twice Eq (36)
+
+_____________________________________________________________________________________________________
+
+3D3/2
+QUANTUM NUMBERS
+(1) Quantum Mechanics: n = 3 L = 2 Sp = -0.5   Sommerfeld: n(phi) = 2.0 n(r) = 1.0
+
+BOUND STATE DISTANCES (as a muliplier of a fixed radius for all states)
+(2) Horizontal distance between p-e Sp-2 centers  =  5.9164531096983408   PTV1 x-bar Eqs (84)/(86)
+(3) Shortest distance between p-e Sp-2 centers    =  6.0002773654076931   PTV1 d2-bar Eq (86)
+
+FINE STRUCTURE (ALL ENERGIES IN MHz)
+(4) Sommerfeld f-s energy no adjustments     = 365539617.722525060177
+(5) New PTV f-s energy no adjustments        = 365539617.710735797882   PTV1 Eq (54)
+(6) Sommerfeld f-s energy reduced mass        = 365340646.987534224987
+(7) Relativistic reduced mass multiplier     =  0.9994556786198890   PTV2 (1 + Mr)^(-1) Eq (14)
+(8) New PTV f-s energy relativ. reduced mass = 365340646.975872814655   PTV2 (D = 1) Eq (14)
+(9) Increased velocity D multiplier          =  1.0001815472462652   PTV2 Eq (15)
+(10) New PTV f-s energy with relativistic reduced mass 
+     and increased velocity                  = 365406973.564280033112   PTV2 Eqs (14)/(15)
+
+EXIT POTENTIAL RED-SHIFT (ALL ENERGIES IN MHz)
+(11) Average h-f energy                        = 365340649.089800000191   Horbatsch and Hessels (2016)
+(12) Difference between PTV f-s with corrections
+     and average h-f energy                    =  66324.474480032921
+(13) Exit potential red-shift                  =  66324.474479716388   PTV2 Eq (24) & Table 2
+(14) Adjusted f-s frequency after exit shift   = 365340649.089800298214   PTV2 Eqs (14)/(15) minus (24)
+
+HYPERFINE SHIFT (ALL ENERGIES IN MHz)
+(15) Upper h-f energy from experiment      = 365340651.193099975586       Horbatsch and Hessels (2016)
+(16) Upper h-f energy calculated from PTV  = 365340651.192569196224       PTV2 Eqs (14)/(15) minus (24) plus (36)
+(17) Deviation of PTV from experiment is one part in 688309828034.508300781250
+(18) Lower h-f energy from experiment      = 365340646.986500024796       Horbatsch and Hessels (2016)
+(19) Lower h-f energy calculated from PTV  = 365340646.987031400204       PTV2 Eqs (14)/(15) minus (24) minus (36)
+(20) Deviation of PTV from experiment is one part in 687537739548.206420898438
+(21) H-f difference taken from experiment  =      4.206599950790
+(22) H-f difference calculated from PTV    =      4.205537761825       PTV2 twice Eq (36)
+
+_____________________________________________________________________________________________________
+
+4D3/2
+QUANTUM NUMBERS
+(1) Quantum Mechanics: n = 4 L = 2 Sp = -0.5   Sommerfeld: n(phi) = 2.0 n(r) = 2.0
+
+BOUND STATE DISTANCES (as a muliplier of a fixed radius for all states)
+(2) Horizontal distance between p-e Sp-2 centers  =  7.9377066388691304   PTV1 x-bar Eqs (84)/(86)
+(3) Shortest distance between p-e Sp-2 centers    =  8.0003811001296548   PTV1 d2-bar Eq (86)
+
+FINE STRUCTURE (ALL ENERGIES IN MHz)
+(4) Sommerfeld f-s energy no adjustments     = 205615977.950866907835
+(5) New PTV f-s energy no adjustments        = 205615977.934378176928   PTV1 Eq (54)
+(6) Sommerfeld f-s energy reduced mass        = 205504056.943470656872
+(7) Relativistic reduced mass multiplier     =  0.9994556789720420   PTV2 (1 + Mr)^(-1) Eq (14)
+(8) New PTV f-s energy relativ. reduced mass = 205504056.950314670801   PTV2 (D = 1) Eq (14)
+(9) Increased velocity D multiplier          =  1.0001361588898672   PTV2 Eq (15)
+(10) New PTV f-s energy with relativistic reduced mass 
+     and increased velocity                  = 205532038.154572218657   PTV2 Eqs (14)/(15)
+
+EXIT POTENTIAL RED-SHIFT (ALL ENERGIES IN MHz)
+(11) Average h-f energy                        = 205504057.762149989605   Horbatsch and Hessels (2016)
+(12) Difference between PTV f-s with corrections
+     and average h-f energy                    =  27980.392422229052
+(13) Exit potential red-shift                  =  27980.401373638313   PTV2 Eq (24) & Table 2
+(14) Adjusted f-s frequency after exit shift   = 205504057.753198593855   PTV2 Eqs (14)/(15) minus (24)
+
+HYPERFINE SHIFT (ALL ENERGIES IN MHz)
+(15) Upper h-f energy from experiment      = 205504058.649500012398       Horbatsch and Hessels (2016)
+(16) Upper h-f energy calculated from PTV  = 205504058.640259385109       PTV2 Eqs (14)/(15) minus (24) plus (36)
+(17) Deviation of PTV from experiment is one part in 22239189205.063018798828
+(18) Lower h-f energy from experiment      = 205504056.874799996614       Horbatsch and Hessels (2016)
+(19) Lower h-f energy calculated from PTV  = 205504056.866137802601       PTV2 Eqs (14)/(15) minus (24) minus (36)
+(20) Deviation of PTV from experiment is one part in 23724250063.235137939453
+(21) H-f difference taken from experiment  =      1.774700015783
+(22) H-f difference calculated from PTV    =      1.774121585857       PTV2 twice Eq (36)
+
+_____________________________________________________________________________________________________
+
+5D3/2
+QUANTUM NUMBERS
+(1) Quantum Mechanics: n = 5 L = 2 Sp = -0.5   Sommerfeld: n(phi) = 2.0 n(r) = 3.0
+
+BOUND STATE DISTANCES (as a muliplier of a fixed radius for all states)
+(2) Horizontal distance between p-e Sp-2 centers  =  9.9504174816877118   PTV1 x-bar Eqs (84)/(86)
+(3) Shortest distance between p-e Sp-2 centers    = 10.0004859443149634   PTV1 d2-bar Eq (86)
+
+FINE STRUCTURE (ALL ENERGIES IN MHz)
+(4) Sommerfeld f-s energy no adjustments     = 131594168.930585384369
+(5) New PTV f-s energy no adjustments        = 131594168.941192030907   PTV1 Eq (54)
+(6) Sommerfeld f-s energy reduced mass        = 131522539.516855180264
+(7) Relativistic reduced mass multiplier     =  0.9994556791350294   PTV2 (1 + Mr)^(-1) Eq (14)
+(8) New PTV f-s energy relativ. reduced mass = 131522539.542731940746   PTV2 (D = 1) Eq (14)
+(9) Increased velocity D multiplier          =  1.0001089263703744   PTV2 Eq (15)
+(10) New PTV f-s energy with relativistic reduced mass 
+     and increased velocity                  = 131536865.815586760640   PTV2 Eqs (14)/(15)
+
+EXIT POTENTIAL RED-SHIFT (ALL ENERGIES IN MHz)
+(11) Average h-f energy                        = 131522539.938050001860   Horbatsch and Hessels (2016)
+(12) Difference between PTV f-s with corrections
+     and average h-f energy                    =  14325.877536758780
+(13) Exit potential red-shift                  =  14325.877537220982   PTV2 Eq (24) & Table 2
+(14) Adjusted f-s frequency after exit shift   = 131522539.938049539924   PTV2 Eqs (14)/(15) minus (24)
+
+HYPERFINE SHIFT (ALL ENERGIES IN MHz)
+(15) Upper h-f energy from experiment      = 131522540.392399996519       Horbatsch and Hessels (2016)
+(16) Upper h-f energy calculated from PTV  = 131522540.392210662365       PTV2 Eqs (14)/(15) minus (24) plus (36)
+(17) Deviation of PTV from experiment is one part in 694658293414.770874023438
+(18) Lower h-f energy from experiment      = 131522539.483700007200       Horbatsch and Hessels (2016)
+(19) Lower h-f energy calculated from PTV  = 131522539.483888417482       PTV2 Eqs (14)/(15) minus (24) minus (36)
+(20) Deviation of PTV from experiment is one part in 698064553554.749633789062
+(21) H-f difference taken from experiment  =      0.908699989319
+(22) H-f difference calculated from PTV    =      0.908322246283       PTV2 twice Eq (36)
+
+_____________________________________________________________________________________________________
+
+6D3/2
+QUANTUM NUMBERS
+(1) Quantum Mechanics: n = 6 L = 2 Sp = -0.5   Sommerfeld: n(phi) = 2.0 n(r) = 4.0
+
+BOUND STATE DISTANCES (as a muliplier of a fixed radius for all states)
+(2) Horizontal distance between p-e Sp-2 centers  = 11.9588996786783515   PTV1 x-bar Eqs (84)/(86)
+(3) Shortest distance between p-e Sp-2 centers    = 12.0005913432321289   PTV1 d2-bar Eq (86)
+
+FINE STRUCTURE (ALL ENERGIES IN MHz)
+(4) Sommerfeld f-s energy no adjustments     = 91384803.042339920998
+(5) New PTV f-s energy no adjustments        = 91384803.044545650482   PTV1 Eq (54)
+(6) Sommerfeld f-s energy reduced mass        = 91335060.413779944181
+(7) Relativistic reduced mass multiplier     =  0.9994556792235627   PTV2 (1 + Mr)^(-1) Eq (14)
+(8) New PTV f-s energy relativ. reduced mass = 91335060.425191074610   PTV2 (D = 1) Eq (14)
+(9) Increased velocity D multiplier          =  1.0000907715633571   PTV2 Eq (15)
+(10) New PTV f-s energy with relativistic reduced mass 
+     and increased velocity                  = 91343351.051415190101   PTV2 Eqs (14)/(15)
+
+EXIT POTENTIAL RED-SHIFT (ALL ENERGIES IN MHz)
+(11) Average h-f energy                        = 91335060.647199988365   Horbatsch and Hessels (2016)
+(12) Difference between PTV f-s with corrections
+     and average h-f energy                    =   8290.404215201735
+(13) Exit potential red-shift                  =   8290.399225818972   PTV2 Eq (24) & Table 2
+(14) Adjusted f-s frequency after exit shift   = 91335060.652189373970   PTV2 Eqs (14)/(15) minus (24)
+
+HYPERFINE SHIFT (ALL ENERGIES IN MHz)
+(15) Upper h-f energy from experiment      = 91335060.910099998116       Horbatsch and Hessels (2016)
+(16) Upper h-f energy calculated from PTV  = 91335060.915008634329       PTV2 Eqs (14)/(15) minus (24) plus (36)
+(17) Deviation of PTV from experiment is one part in 18607013630.450580596924
+(18) Lower h-f energy from experiment      = 91335060.384299993515       Horbatsch and Hessels (2016)
+(19) Lower h-f energy calculated from PTV  = 91335060.389370113611       PTV2 Eqs (14)/(15) minus (24) minus (36)
+(20) Deviation of PTV from experiment is one part in 18014378091.878841400146
+(21) H-f difference taken from experiment  =      0.525800004601
+(22) H-f difference calculated from PTV    =      0.525638531811       PTV2 twice Eq (36)
+
+_____________________________________________________________________________________________________
+
+7D3/2
+QUANTUM NUMBERS
+(1) Quantum Mechanics: n = 7 L = 2 Sp = -0.5   Sommerfeld: n(phi) = 2.0 n(r) = 5.0
+
+BOUND STATE DISTANCES (as a muliplier of a fixed radius for all states)
+(2) Horizontal distance between p-e Sp-2 centers  = 13.9649778760733305   PTV1 x-bar Eqs (84)/(86)
+(3) Shortest distance between p-e Sp-2 centers    = 14.0006970591389610   PTV1 d2-bar Eq (86)
+
+FINE STRUCTURE (ALL ENERGIES IN MHz)
+(4) Sommerfeld f-s energy no adjustments     = 67139832.496862411499
+(5) New PTV f-s energy no adjustments        = 67139832.496326163411   PTV1 Eq (54)
+(6) Sommerfeld f-s energy reduced mass        = 67103286.904616363347
+(7) Relativistic reduced mass multiplier     =  0.9994556792769442   PTV2 (1 + Mr)^(-1) Eq (14)
+(8) New PTV f-s energy relativ. reduced mass = 67103286.909759238362   PTV2 (D = 1) Eq (14)
+(9) Increased velocity D multiplier          =  1.0000778039449458   PTV2 Eq (15)
+(10) New PTV f-s energy with relativistic reduced mass 
+     and increased velocity                  = 67108507.810199648142   PTV2 Eqs (14)/(15)
+
+EXIT POTENTIAL RED-SHIFT (ALL ENERGIES IN MHz)
+(11) Average h-f energy                        = 67103287.046849995852   Horbatsch and Hessels (2016)
+(12) Difference between PTV f-s with corrections
+     and average h-f energy                    =   5220.763349652290
+(13) Exit potential red-shift                  =   5220.756388009185   PTV2 Eq (24) & Table 2
+(14) Adjusted f-s frequency after exit shift   = 67103287.053811639547   PTV2 Eqs (14)/(15) minus (24)
+
+HYPERFINE SHIFT (ALL ENERGIES IN MHz)
+(15) Upper h-f energy from experiment      = 67103287.212399996817       Horbatsch and Hessels (2016)
+(16) Upper h-f energy calculated from PTV  = 67103287.219316340983       PTV2 Eqs (14)/(15) minus (24) plus (36)
+(17) Deviation of PTV from experiment is one part in 9702132456.651521682739
+(18) Lower h-f energy from experiment      = 67103286.881300002337       Horbatsch and Hessels (2016)
+(19) Lower h-f energy calculated from PTV  = 67103286.888306938112       PTV2 Eqs (14)/(15) minus (24) minus (36)
+(20) Deviation of PTV from experiment is one part in 9576695010.968404769897
+(21) H-f difference taken from experiment  =      0.331099994481
+(22) H-f difference calculated from PTV    =      0.331009407696       PTV2 twice Eq (36)
+
+_____________________________________________________________________________________________________
+
+8D3/2
+QUANTUM NUMBERS
+(1) Quantum Mechanics: n = 8 L = 2 Sp = -0.5   Sommerfeld: n(phi) = 2.0 n(r) = 6.0
+
+BOUND STATE DISTANCES (as a muliplier of a fixed radius for all states)
+(2) Horizontal distance between p-e Sp-2 centers  = 15.9695580628726113   PTV1 x-bar Eqs (84)/(86)
+(3) Shortest distance between p-e Sp-2 centers    = 16.0008029731643262   PTV1 d2-bar Eq (86)
+
+FINE STRUCTURE (ALL ENERGIES IN MHz)
+(4) Sommerfeld f-s energy no adjustments     = 51403919.639947198331
+(5) New PTV f-s energy no adjustments        = 51403919.634302094579   PTV1 Eq (54)
+(6) Sommerfeld f-s energy reduced mass        = 51375939.428839318454
+(7) Relativistic reduced mass multiplier     =  0.9994556793115901   PTV2 (1 + Mr)^(-1) Eq (14)
+(8) New PTV f-s energy relativ. reduced mass = 51375939.426837928593   PTV2 (D = 1) Eq (14)
+(9) Increased velocity D multiplier          =  1.0000680782863101   PTV2 Eq (15)
+(10) New PTV f-s energy with relativistic reduced mass 
+     and increased velocity                  = 51379437.012751676142   PTV2 Eqs (14)/(15)
+
+EXIT POTENTIAL RED-SHIFT (ALL ENERGIES IN MHz)
+(11) Average h-f energy                        = 51375939.517399996519   Horbatsch and Hessels (2016)
+(12) Difference between PTV f-s with corrections
+     and average h-f energy                    =   3497.495351679623
+(13) Exit potential red-shift                  =   3497.487911434135   PTV2 Eq (24) & Table 2
+(14) Adjusted f-s frequency after exit shift   = 51375939.524840243161   PTV2 Eqs (14)/(15) minus (24)
+
+HYPERFINE SHIFT (ALL ENERGIES IN MHz)
+(15) Upper h-f energy from experiment      = 51375939.628300003707       Horbatsch and Hessels (2016)
+(16) Upper h-f energy calculated from PTV  = 51375939.635714218020       PTV2 Eqs (14)/(15) minus (24) plus (36)
+(17) Deviation of PTV from experiment is one part in 6929384215.129638671875
+(18) Lower h-f energy from experiment      = 51375939.406499996781       Horbatsch and Hessels (2016)
+(19) Lower h-f energy calculated from PTV  = 51375939.413966268301       PTV2 Eqs (14)/(15) minus (24) minus (36)
+(20) Deviation of PTV from experiment is one part in 6881070326.897651672363
+(21) H-f difference taken from experiment  =      0.221800006926
+(22) H-f difference calculated from PTV    =      0.221747946014       PTV2 twice Eq (36)
+
+_____________________________________________________________________________________________________
+
+3D5/2
+QUANTUM NUMBERS
+(1) Quantum Mechanics: n = 3 L = 2 Sp = 0.5   Sommerfeld: n(phi) = 3.0 n(r) = 0.0
+
+BOUND STATE DISTANCES (as a muliplier of a fixed radius for all states)
+(2) Horizontal distance between p-e Sp-2 centers  =  5.9164711126492708   PTV1 x-bar Eqs (84)/(86)
+(3) Shortest distance between p-e Sp-2 centers    =  6.0002951168570053   PTV1 d2-bar Eq (86)
+
+FINE STRUCTURE (ALL ENERGIES IN MHz)
+(4) Sommerfeld f-s energy no adjustments     = 365538536.306861221790
+(5) New PTV f-s energy no adjustments        = 365538536.289994001389   PTV1 Eq (54)
+(6) Sommerfeld f-s energy reduced mass        = 365339566.160507202148
+(7) Relativistic reduced mass multiplier     =  0.9994556786198915   PTV2 (1 + Mr)^(-1) Eq (14)
+(8) New PTV f-s energy relativ. reduced mass = 365339565.947548389435   PTV2 (D = 1) Eq (14)
+(9) Increased velocity D multiplier          =  1.0001815472462652   PTV2 Eq (15)
+(10) New PTV f-s energy with relativistic reduced mass 
+     and increased velocity                  = 365405892.339697897434   PTV2 Eqs (14)/(15)
+
+EXIT POTENTIAL RED-SHIFT (ALL ENERGIES IN MHz)
+(11) Average h-f energy                        = 365339565.452000021935   Horbatsch and Hessels (2016)
+(12) Difference between PTV f-s with corrections
+     and average h-f energy                    =  66326.887697875500
+(13) Exit potential red-shift                  =  66326.887697516257   PTV2 Eq (24) & Table 2
+(14) Adjusted f-s frequency after exit shift   = 365339565.452000379562   PTV2 Eqs (14)/(15) minus (24)
+
+HYPERFINE SHIFT (ALL ENERGIES IN MHz)
+(15) Upper h-f energy from experiment      = 365339566.803699970245       Horbatsch and Hessels (2016)
+(16) Upper h-f energy calculated from PTV  = 365339566.804073452950       PTV2 Eqs (14)/(15) minus (24) plus (36)
+(17) Deviation of PTV from experiment is one part in 978196748421.976440429688
+(18) Lower h-f energy from experiment      = 365339564.100300014019       Horbatsch and Hessels (2016)
+(19) Lower h-f energy calculated from PTV  = 365339564.099927306175       PTV2 Eqs (14)/(15) minus (24) minus (36)
+(20) Deviation of PTV from experiment is one part in 980230414242.216430664062
+(21) H-f difference taken from experiment  =      2.703399956226
+(22) H-f difference calculated from PTV    =      2.704146087261       PTV2 twice Eq (36)
+
+_____________________________________________________________________________________________________
+
+4D5/2
+QUANTUM NUMBERS
+(1) Quantum Mechanics: n = 4 L = 2 Sp = 0.5   Sommerfeld: n(phi) = 3.0 n(r) = 1.0
+
+BOUND STATE DISTANCES (as a muliplier of a fixed radius for all states)
+(2) Horizontal distance between p-e Sp-2 centers  =  7.9377245304992696   PTV1 x-bar Eqs (84)/(86)
+(3) Shortest distance between p-e Sp-2 centers    =  8.0003988515982485   PTV1 d2-bar Eq (86)
+
+FINE STRUCTURE (ALL ENERGIES IN MHz)
+(4) Sommerfeld f-s energy no adjustments     = 205615521.724132597446
+(5) New PTV f-s energy no adjustments        = 205615521.709496587515   PTV1 Eq (54)
+(6) Sommerfeld f-s energy reduced mass        = 205503600.965069949627
+(7) Relativistic reduced mass multiplier     =  0.9994556789720431   PTV2 (1 + Mr)^(-1) Eq (14)
+(8) New PTV f-s energy relativ. reduced mass = 205503600.911680102348   PTV2 (D = 1) Eq (14)
+(9) Increased velocity D multiplier          =  1.0001361588898672   PTV2 Eq (15)
+(10) New PTV f-s energy with relativistic reduced mass 
+     and increased velocity                  = 205531582.053843945265   PTV2 Eqs (14)/(15)
+
+EXIT POTENTIAL RED-SHIFT (ALL ENERGIES IN MHz)
+(11) Average h-f energy                        = 205503600.601850003004   Horbatsch and Hessels (2016)
+(12) Difference between PTV f-s with corrections
+     and average h-f energy                    =  27981.451993942261
+(13) Exit potential red-shift                  =  27981.462942266266   PTV2 Eq (24) & Table 2
+(14) Adjusted f-s frequency after exit shift   = 205503600.590901672840   PTV2 Eqs (14)/(15) minus (24)
+
+HYPERFINE SHIFT (ALL ENERGIES IN MHz)
+(15) Upper h-f energy from experiment      = 205503601.172199994326       Horbatsch and Hessels (2016)
+(16) Upper h-f energy calculated from PTV  = 205503601.161280363798       PTV2 Eqs (14)/(15) minus (24) plus (36)
+(17) Deviation of PTV from experiment is one part in 18819647849.323162078857
+(18) Lower h-f energy from experiment      = 205503600.031500011683       Horbatsch and Hessels (2016)
+(19) Lower h-f energy calculated from PTV  = 205503600.020522981882       PTV2 Eqs (14)/(15) minus (24) minus (36)
+(20) Deviation of PTV from experiment is one part in 18721239148.292186737061
+(21) H-f difference taken from experiment  =      1.140699982643
+(22) H-f difference calculated from PTV    =      1.140757356008       PTV2 twice Eq (36)
+
+_____________________________________________________________________________________________________
+
+5D5/2
+QUANTUM NUMBERS
+(1) Quantum Mechanics: n = 5 L = 2 Sp = 0.5   Sommerfeld: n(phi) = 3.0 n(r) = 2.0
+
+BOUND STATE DISTANCES (as a muliplier of a fixed radius for all states)
+(2) Horizontal distance between p-e Sp-2 centers  =  9.9504353224891329   PTV1 x-bar Eqs (84)/(86)
+(3) Shortest distance between p-e Sp-2 centers    = 10.0005036957947340   PTV1 d2-bar Eq (86)
+
+FINE STRUCTURE (ALL ENERGIES IN MHz)
+(4) Sommerfeld f-s energy no adjustments     = 131593935.343814313412
+(5) New PTV f-s energy no adjustments        = 131593935.354021549225   PTV1 Eq (54)
+(6) Sommerfeld f-s energy reduced mass        = 131522306.057230189443
+(7) Relativistic reduced mass multiplier     =  0.9994556791350299   PTV2 (1 + Mr)^(-1) Eq (14)
+(8) New PTV f-s energy relativ. reduced mass = 131522306.057277619839   PTV2 (D = 1) Eq (14)
+(9) Increased velocity D multiplier          =  1.0001089263703744   PTV2 Eq (15)
+(10) New PTV f-s energy with relativistic reduced mass 
+     and increased velocity                  = 131536632.304699704051   PTV2 Eqs (14)/(15)
+
+EXIT POTENTIAL RED-SHIFT (ALL ENERGIES IN MHz)
+(11) Average h-f energy                        = 131522305.871950000525   Horbatsch and Hessels (2016)
+(12) Difference between PTV f-s with corrections
+     and average h-f energy                    =  14326.432749703526
+(13) Exit potential red-shift                  =  14326.432748949834   PTV2 Eq (24) & Table 2
+(14) Adjusted f-s frequency after exit shift   = 131522305.871950760484   PTV2 Eqs (14)/(15) minus (24)
+
+HYPERFINE SHIFT (ALL ENERGIES IN MHz)
+(15) Upper h-f energy from experiment      = 131522306.163900002837       Horbatsch and Hessels (2016)
+(16) Upper h-f energy calculated from PTV  = 131522306.163976162672       PTV2 Eqs (14)/(15) minus (24) plus (36)
+(17) Deviation of PTV from experiment is one part in 1726924781318.631835937500
+(18) Lower h-f energy from experiment      = 131522305.579999998212       Horbatsch and Hessels (2016)
+(19) Lower h-f energy calculated from PTV  = 131522305.579925358295       PTV2 Eqs (14)/(15) minus (24) minus (36)
+(20) Deviation of PTV from experiment is one part in 1762090740294.402343750000
+(21) H-f difference taken from experiment  =      0.583900004625
+(22) H-f difference calculated from PTV    =      0.584050795396       PTV2 twice Eq (36)
+
+_____________________________________________________________________________________________________
+
+6D5/2
+QUANTUM NUMBERS
+(1) Quantum Mechanics: n = 6 L = 2 Sp = 0.5   Sommerfeld: n(phi) = 3.0 n(r) = 3.0
+
+BOUND STATE DISTANCES (as a muliplier of a fixed radius for all states)
+(2) Horizontal distance between p-e Sp-2 centers  = 11.9589174920513681   PTV1 x-bar Eqs (84)/(86)
+(3) Shortest distance between p-e Sp-2 centers    = 12.0006090947191897   PTV1 d2-bar Eq (86)
+
+FINE STRUCTURE (ALL ENERGIES IN MHz)
+(4) Sommerfeld f-s energy no adjustments     = 91384667.867096662521
+(5) New PTV f-s energy no adjustments        = 91384667.866802945733   PTV1 Eq (54)
+(6) Sommerfeld f-s energy reduced mass        = 91334925.312115356326
+(7) Relativistic reduced mass multiplier     =  0.9994556792235629   PTV2 (1 + Mr)^(-1) Eq (14)
+(8) New PTV f-s energy relativ. reduced mass = 91334925.308764681220   PTV2 (D = 1) Eq (14)
+(9) Increased velocity D multiplier          =  1.0000907715633571   PTV2 Eq (15)
+(10) New PTV f-s energy with relativistic reduced mass 
+     and increased velocity                  = 91343215.922724068165   PTV2 Eqs (14)/(15)
+
+EXIT POTENTIAL RED-SHIFT (ALL ENERGIES IN MHz)
+(11) Average h-f energy                        = 91334925.192250013351   Horbatsch and Hessels (2016)
+(12) Difference between PTV f-s with corrections
+     and average h-f energy                    =   8290.730474054813
+(13) Exit potential red-shift                  =   8290.724395766518   PTV2 Eq (24) & Table 2
+(14) Adjusted f-s frequency after exit shift   = 91334925.198328301311   PTV2 Eqs (14)/(15) minus (24)
+
+HYPERFINE SHIFT (ALL ENERGIES IN MHz)
+(15) Upper h-f energy from experiment      = 91334925.361200004816       Horbatsch and Hessels (2016)
+(16) Upper h-f energy calculated from PTV  = 91334925.367321178317       PTV2 Eqs (14)/(15) minus (24) plus (36)
+(17) Deviation of PTV from experiment is one part in 14921146304.063980102539
+(18) Lower h-f energy from experiment      = 91334925.023300006986       Horbatsch and Hessels (2016)
+(19) Lower h-f energy calculated from PTV  = 91334925.029335424304       PTV2 Eqs (14)/(15) minus (24) minus (36)
+(20) Deviation of PTV from experiment is one part in 15133158190.353399276733
+(21) H-f difference taken from experiment  =      0.337899997830
+(22) H-f difference calculated from PTV    =      0.337985739254       PTV2 twice Eq (36)
+
+_____________________________________________________________________________________________________
+
+7D5/2
+QUANTUM NUMBERS
+(1) Quantum Mechanics: n = 7 L = 2 Sp = 0.5   Sommerfeld: n(phi) = 3.0 n(r) = 4.0
+
+BOUND STATE DISTANCES (as a muliplier of a fixed radius for all states)
+(2) Horizontal distance between p-e Sp-2 centers  = 13.9649956729696623   PTV1 x-bar Eqs (84)/(86)
+(3) Shortest distance between p-e Sp-2 centers    = 14.0007148106311394   PTV1 d2-bar Eq (86)
+
+FINE STRUCTURE (ALL ENERGIES IN MHz)
+(4) Sommerfeld f-s energy no adjustments     = 67139747.364169120789
+(5) New PTV f-s energy no adjustments        = 67139747.369834989309   PTV1 Eq (54)
+(6) Sommerfeld f-s energy reduced mass        = 67103201.818262554705
+(7) Relativistic reduced mass multiplier     =  0.9994556792769442   PTV2 (1 + Mr)^(-1) Eq (14)
+(8) New PTV f-s energy relativ. reduced mass = 67103201.822984553874   PTV2 (D = 1) Eq (14)
+(9) Increased velocity D multiplier          =  1.0000778039449458   PTV2 Eq (15)
+(10) New PTV f-s energy with relativistic reduced mass 
+     and increased velocity                  = 67108422.716804876924   PTV2 Eqs (14)/(15)
+
+EXIT POTENTIAL RED-SHIFT (ALL ENERGIES IN MHz)
+(11) Average h-f energy                        = 67103201.745800003409   Horbatsch and Hessels (2016)
+(12) Difference between PTV f-s with corrections
+     and average h-f energy                    =   5220.971004873514
+(13) Exit potential red-shift                  =   5220.962610671851   PTV2 Eq (24) & Table 2
+(14) Adjusted f-s frequency after exit shift   = 67103201.754194207489   PTV2 Eqs (14)/(15) minus (24)
+
+HYPERFINE SHIFT (ALL ENERGIES IN MHz)
+(15) Upper h-f energy from experiment      = 67103201.852200001478       Horbatsch and Hessels (2016)
+(16) Upper h-f energy calculated from PTV  = 67103201.860613875091       PTV2 Eqs (14)/(15) minus (24) plus (36)
+(17) Deviation of PTV from experiment is one part in 7975304234.362689971924
+(18) Lower h-f energy from experiment      = 67103201.639399997890       Horbatsch and Hessels (2016)
+(19) Lower h-f energy calculated from PTV  = 67103201.647774539888       PTV2 Eqs (14)/(15) minus (24) minus (36)
+(20) Deviation of PTV from experiment is one part in 8012760776.189349174500
+(21) H-f difference taken from experiment  =      0.212800003588
+(22) H-f difference calculated from PTV    =      0.212839331888       PTV2 twice Eq (36)
+
+_____________________________________________________________________________________________________
+
+8D5/2
+QUANTUM NUMBERS
+(1) Quantum Mechanics: n = 8 L = 2 Sp = 0.5   Sommerfeld: n(phi) = 3.0 n(r) = 5.0
+
+BOUND STATE DISTANCES (as a muliplier of a fixed radius for all states)
+(2) Horizontal distance between p-e Sp-2 centers  = 15.9695758490998703   PTV1 x-bar Eqs (84)/(86)
+(3) Shortest distance between p-e Sp-2 centers    = 16.0008207246603007   PTV1 d2-bar Eq (86)
+
+FINE STRUCTURE (ALL ENERGIES IN MHz)
+(4) Sommerfeld f-s energy no adjustments     = 51403862.601317048073
+(5) New PTV f-s energy no adjustments        = 51403862.606215618551   PTV1 Eq (54)
+(6) Sommerfeld f-s energy reduced mass        = 51375882.421256467700
+(7) Relativistic reduced mass multiplier     =  0.9994556793115903   PTV2 (1 + Mr)^(-1) Eq (14)
+(8) New PTV f-s energy relativ. reduced mass = 51375882.425912745297   PTV2 (D = 1) Eq (14)
+(9) Increased velocity D multiplier          =  1.0000680782863101   PTV2 Eq (15)
+(10) New PTV f-s energy with relativistic reduced mass 
+     and increased velocity                  = 51379380.007945969701   PTV2 Eqs (14)/(15)
+
+EXIT POTENTIAL RED-SHIFT (ALL ENERGIES IN MHz)
+(11) Average h-f energy                        = 51375882.372400000691   Horbatsch and Hessels (2016)
+(12) Difference between PTV f-s with corrections
+     and average h-f energy                    =   3497.635545969009
+(13) Exit potential red-shift                  =   3497.626648765185   PTV2 Eq (24) & Table 2
+(14) Adjusted f-s frequency after exit shift   = 51375882.381297200918   PTV2 Eqs (14)/(15) minus (24)
+
+HYPERFINE SHIFT (ALL ENERGIES IN MHz)
+(15) Upper h-f energy from experiment      = 51375882.443700000644       Horbatsch and Hessels (2016)
+(16) Upper h-f energy calculated from PTV  = 51375882.452589303255       PTV2 Eqs (14)/(15) minus (24) plus (36)
+(17) Deviation of PTV from experiment is one part in 5779517774.329857826233
+(18) Lower h-f energy from experiment      = 51375882.301100000739       Horbatsch and Hessels (2016)
+(19) Lower h-f energy calculated from PTV  = 51375882.310005098581       PTV2 Eqs (14)/(15) minus (24) minus (36)
+(20) Deviation of PTV from experiment is one part in 5769266459.661095619202
+(21) H-f difference taken from experiment  =      0.142599999905
+(22) H-f difference calculated from PTV    =      0.142584209090       PTV2 twice Eq (36)
+
+_____________________________________________________________________________________________________
+
