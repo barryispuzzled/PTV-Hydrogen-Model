@@ -98,6 +98,10 @@ A: Searchable_parameter_in_magnetic_potential
 B: Searchable_paremeter_in_magnetic_potential
 k: muliplier_in_hyperfine_half-shift_(k=1_for_nS1/2_states)
 
+dispersive_media:
+  - the_Sp-1_structure_consists_of_a_string_following_a_helical_path_at_speed_sqr(2)*c_and_rake_pi/4
+  - when_a_photon_enters_a_dispersive_medium_the_translational_action_is_redistributed_into_rotational_action_and its_speed_slows_<c
+  - on_exiting_the_medium_the_translational_action_is_restored_and_the_photon_continues_at_speed_c
 
 Fundamental_postulates:
   - Sp-1_and_Sp-2_rotations_tend_to_preserve_action_h
@@ -106,7 +110,6 @@ used_in:
   - dispersive_media_when_photon_speed_slows_due_to_translational_action_redistributed_into_Sp-1_action
   - hyperfine_shift_when_changing_magnetic_momentum_field_overloads_or_underloads_electron_Sp-2_action_into_or_out_of_Sp-3_action
   - Lorentz_force_when_Sp-2_circuit_in_toroid_is_underloaded_or_overloaded_due_to_field_gradient_across_it_and_change_in_Sp-3_translational_action_gives_deflection
-
 
 Attraction_mechanism:
   - proton_and_electron_Sp-3_have_opposite_rotations
@@ -122,6 +125,18 @@ Repulsion_mechanism:
   - toroid_attempts_to_find_next_lowest_integer_action
   - toroid_seeks_weaker_source_field_to_reduce_action_further
   - Sp-3_energy_redistributed_into_translational_motion_away_from_source
+
+Photon_and_toroid_interaction_mechanism:
+  - ground-state_has_the_highest_Sp-2_frequency
+  - as_n_increases_the frequency_decreases
+  - photons_are_rotating_structures_(SAM_or_OAM)
+  - if_the_photon_rotation_opposes_the_Sp-3_rotation_sense,_the_Sp-3_frequency_decreases
+  - stimulated_emission:_for_n>1_if_the_photon_rotation_is_the_same_sense_as_the_Sp-3_rotation_sense,_the_Sp-3_frequency_increases,_with_emission_of_a_transition_photon_plus_the_incident_one
+
+String_density:
+  - in_the_Sommerfeld_model_the_orbital_radius_is_proportional_to_na^2
+  - in_the_Photonic_Toroidal_Vortex_model_the_Sp-3_radius_r3o_is_invariant_and_all_states_reside_on_the_surface_of_a_guide_tube_with_radius_r3o
+  - the_angular_momentum_change_is_handled_by having_the_number_of_strings_in_a_state_proportional_to_na^2
 
 rest_mass:
 derived_from: Sp-2
@@ -150,7 +165,7 @@ used_in:
   - changing_p2f_field_momentum_creates_hyperfine_splitting
 formula: 
   - p2f = hbar/r2f
-  - v2 = c*sqr(1 - alpha)
+  - v2 = c*sqr(1 - alpha^2)
 
 electric_momentum_field:
 derived_from: Sp-3
@@ -223,7 +238,6 @@ nature:
   - boundary_term_that_remains_when_differentiated_field_momentum_with_respect to spatial_coordinates_is_integrated_over_trajectory_from_infinity_to_bound-state_distance_dbar2
   - cumulative_effect_of_Sp-2_field
 
-
 hyperfine_midpoint: 
   - used_instead_of_the_hyperfine_centroid
 used_in: base-line_for_equal_magnitude_hyperfine_half-interval_shift_each_side
@@ -249,7 +263,6 @@ universal_scaling_law:
   - law_has_0.05%_error_for_3He+
   - law_has_0.01%_error_for_7Li2+
 
-
 hyperfine_shift:
   - two_cases_per_state_depending_on_whether_the_proton-electron_have_same_or_opposite_sense_rotations
   - same_sense_proton-electron_Sp-2_rotations_as_they_approach_gives_red-shift,_capital_gamma_>0
@@ -265,5 +278,13 @@ complete_calculation:
 formula:
   - nu = E3D + nu_magnetic_potential + nu_shift
 
+Departure_from_Maxwell's_equations:
+  - a_toroid_always_has_a_magnetic_field_and_does_not_need_relative_motion
+  - a_displacement_current_is_superfluous
+  - electromagnetic_induction_(which_is_how_the_hyperfine_shift_works)_consists_of_a_redistribution_of_Sp-2_magnetic_momentum_into_Sp-3_electric_momentum_to_preserve_action_h
+  - the_photon_(HS)_is_the_basic_element_and_its_Sp-2_and_Sp-3_rotations_produce_the_magnetic_and electric_momentum_fields
+  - Coulomb's_law_is_the_displacement_of_Sp-3_momentum_into_translational_momentum_by_the_intruding_rotating_Sp-3_field
+  - charge_is_not_an_intrinsic_scalar_property_but_is_defined_by_four_Sp-2/Sp-3_chiralities
+  - Ampere's_law_results_from_aligned_electron_Sp-3_toroids_creating_Sp-3_fields_which_rotate_around_a_current_carrying_conductor
 
   
