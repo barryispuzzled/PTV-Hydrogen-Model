@@ -12,13 +12,15 @@ Aim:
   - Interpret_anthropocentric_theories_using_a_universal_model
 
 Core_achievements:
-  - obtains_energy_levels_for_an_electron_without_an_external_potential
+  - obtains_energy_levels_for_an_electron_without_an_external_potential_causative_agent,_only as_a_modifier_of_states_obtained_from_an_internal_potential
   - reproduces_the_Sommerfeld-Dirac_fine_structure_hydrogen_atom_energy_levels_to_2_parts_in_10^10
   - obtains_the_hyperfine_half_splitting_for_hydrogen_across_30_states_with_a_median_error_of_0.0014_MHz
   - provides_explicit_local_physical_mechanisms_for_intrinsic_spin,_the_Lorentz_force_deflection,_mass_generation,_charge_invariance,_and_Bose_Einstein_statistics_with_distinguishable_photons
+  - can_calculate_any_hydrogen_state_in_two-and-a-half_pages_using_a_three-term_equation_and_a_hand-held_calculator
 
 Main_research_and_documentation:
-  - https://barryispuzzled.com/physics
+  - for_tutorials_https://barryispuzzled.com/physics
+  - for_architecture_https://barryispuzzled.com/physics07
 Relevant_publications: 
   - Reinterpretation_of_the_Grangier_experiment_using_a_multiple-triggering_single_photon_model,_Modern_Physics_Letters_B,_(2023),_DOI:_10.1142/S0217984923500422 
   - A_photonic_toroidal_vortex_model_of_the_hydrogen_atom_fine_structure,_Quantum_Studies:_Mathematics_and_Foundations,_(2025),_DOI:_10.1007/s40509-025-00364-9 
@@ -51,12 +53,12 @@ structure: HS_helical_trajectory
 Sp-2:
 derived_from: Sp-1
 description: optical_orbital_angular_momentum_(optical_OAM)
-structure: Sp-1_helical_trajectory
+structure: Sp-1_axis_performs_a_helical_trajectory
 
 Sp-3:
 derived_from: Sp-2
 description: toroidal_rotation
-structure: Sp-2_rotation_around_toroidal_axis
+structure: Sp-2_axis_rotates_around_toroidal_axis
 
 constants:
 alpha: fine_structure_constant
@@ -105,11 +107,12 @@ dispersive_media:
 
 Fundamental_postulates:
   - Sp-1_and_Sp-2_rotations_tend_to_preserve_action_h
-  - rotational_and_translational_action_are_interchangeable_when_Sp-1_or_Sp-2_action_is_overloaded_or_underloaded
+  - rotational_and_translational_action_are_interchangeable_when_Sp-1_or_Sp-2_action_is_overloaded_or_underloaded_to_preserve_action_h
 used_in: 
   - dispersive_media_when_photon_speed_slows_due_to_translational_action_redistributed_into_Sp-1_action
   - hyperfine_shift_when_changing_magnetic_momentum_field_overloads_or_underloads_electron_Sp-2_action_into_or_out_of_Sp-3_action
-  - Lorentz_force_when_Sp-2_circuit_in_toroid_is_underloaded_or_overloaded_due_to_field_gradient_across_it_and_change_in_Sp-3_translational_action_gives_deflection
+  - Lorentz_force_when_Sp-2_circuit_in_toroid_is_underloaded_or_overloaded_due_to_field_gradient_across_it,_decrease_(underloaded)_or_increase_(overloaded)_in_Sp-3_speed_causes_deflection_perpendicular_to_field_and_toroidal_axis
+  - In_Lorentz_force,_whichever_side_of_toroid_the_Sp-2_circuit_is,_it_deflects_the_same_way
 
 Attraction_mechanism:
   - proton_and_electron_Sp-3_have_opposite_rotations
@@ -130,13 +133,21 @@ Photon_and_toroid_interaction_mechanism:
   - ground-state_has_the_highest_Sp-2_frequency
   - as_n_increases_the frequency_decreases
   - photons_are_rotating_structures_(SAM_or_OAM)
-  - if_the_photon_rotation_opposes_the_Sp-3_rotation_sense,_the_Sp-3_frequency_decreases
+  - if_the_photon_rotation_opposes_the_Sp-3_rotation_sense,_the_Sp-3_frequency_decreases_and_the_photon_is_absorbed
   - stimulated_emission:_for_n>1_if_the_photon_rotation_is_the_same_sense_as_the_Sp-3_rotation_sense,_the_Sp-3_frequency_increases,_with_emission_of_a_transition_photon_plus_the_incident_one
 
 String_density:
   - in_the_Sommerfeld_model_the_orbital_radius_is_proportional_to_na^2
   - in_the_Photonic_Toroidal_Vortex_model_the_Sp-3_radius_r3o_is_invariant_and_all_states_reside_on_the_surface_of_a_guide_tube_with_radius_r3o
   - the_angular_momentum_change_is_handled_by having_the_number_of_strings_in_a_state_proportional_to_na^2
+
+Sp-2_structure:
+  - each_of_the_na^2_strings_has_n_wavelengths_with_n_interlaced_parts_per_wavelength,_totalling_n^2_Sp-2_circuits
+  - For_the_Coulomb_law_derivation,_it_is_assumed_that_the_Sp-3_field_is_absorbed_by_the_first_wavelength_while_the_time_period_taken_is_over_n_wavelengths
+  - The_assumption_of_single-wavelength_absorption_of_Sp-3_field_momentum_leads_to_n_in_the_denominator_of_the_Coulomb_law
+  - The_bound_state_distance_dbar2_arises_from_the_condition_that_the_Sp-3_Coulomb-field_energy_equals_the_Sp-3_rotational_energy_remaining_in_the_electron_after_half_has_been_redistributed_into_translational_energy
+  - The_n_in_the_Coulomb_law_denominator_leads_to_the_bound_state_distances_dbar2_being_approximately_equal_to_2*n
+  - The_n^2_Sp-2_circuits_are_crucial_for_the_hyperfine_half=splitting_derivation_in_which_n^2_Sp-2_circuits_absorb_the_changing_proton_Sp-2_momentum_field
 
 rest_mass:
 derived_from: Sp-2
@@ -156,16 +167,16 @@ structure:
   - permanent_field_emission_due_to_Sp-2_rotation
   - p2f_field_momentum
   - r2f_field_radius
-  - radius_taken_from_Sp-2_center
+  - r2f_radius_taken_from_proton_Sp-2_center_to_a_point_on_the_electron_Sp-2_circuit
   - mass_of_field_invariant
-  - speed_inversely_proportional_to_r2f
-  - field_cuts_line_joining_source-target_Sp-2_centers_at_pi/4
+  - speed_v2f_inversely_proportional_to_r2f
+  - field_cuts_line_joining_proton-electron_Sp-2_centers_at_pi/4
   - field_lines_are_parallel
 used_in: 
   - changing_p2f_field_momentum_creates_hyperfine_splitting
 formula: 
   - p2f = hbar/r2f
-  - v2 = c*sqr(1 - alpha^2)
+  - v2f = c*sqr(1 - alpha^2)*r2o/r2f
 
 electric_momentum_field:
 derived_from: Sp-3
@@ -175,16 +186,17 @@ structure:
   - r3f_field_radius
   - radius_taken_from_Sp-3_center
   - electric_field_momentum_perpendicular_to_magnetic_field_momentum
+  - speed_v3f_inversely_proportional_to_r2f
 used_in:
   - Coulomb_field
   - Ampere's_law: aligned_Sp-3_field_rotations_around_current-carrying_conductor
 formula: 
   - p3f = hbar*alpha/(r2f*sqr(1 - alpha^2))
-  - v3 = alpha*c
+  - v3f = alpha*c*r2o/r2f
 
 dbar2:
 name: 
-  - bound-state_distance
+  - bound-state_distance_between_proton-electron_Sp-2_centres_taken_as_a_fraction_of_r3o
 derived_from: 
   - electron_Sp-3_residual_energy_after_field_intrusion
   - proton_Sp-3_momentum_field_energy
@@ -203,7 +215,7 @@ derived_from:
   - Sp-3
   - Lorentz_force_deflection_analysis
 structure:
-  - view_rotations_in_v2_and_v3_directions
+  - view_rotations_in_v2_and_v3_directions_of_travel
   - two_chiralities_for_each_charge
   - negative_charge: clockwise_Sp-2_and_counter_clockwise_Sp-3
   - negative_charge: counter_clockwise_Sp-2_and_clockwise_Sp-3
@@ -222,6 +234,7 @@ formula:
 fine_structure_velocity_adjustment:
 formula:
   - MHz_frequency
+  - all_appearances_of_alpha^2_in_fine_structure_formula_replaced_by_alpha^2*D
   - D = (1 + capital_gamma*M/n)^2
   - YD = nr^2 + sqr(na^2 - D*alpha^2)
   - mu = mo/(1 + M)
@@ -234,12 +247,13 @@ formula:
   - MHz_frequency
   - nu_magnetic_potential = A*(dbar2)^B
 nature:
-  - with_B=-3.000_(to_three_decimal_places_for_all_states)_it_resembles_a_dipole_moment
+  - with_B=-3.000_(to_three_decimal_places_for_all_hydreogen_states)_it_resembles_a_dipole_moment
+  - value_of_B_also_holds_for_deuterium_and_tritium
   - boundary_term_that_remains_when_differentiated_field_momentum_with_respect to spatial_coordinates_is_integrated_over_trajectory_from_infinity_to_bound-state_distance_dbar2
   - cumulative_effect_of_Sp-2_field
 
 hyperfine_midpoint: 
-  - used_instead_of_the_hyperfine_centroid
+  - used_instead_of_the_hyperfine_centroid_so_that_an_equal_magnitude_red-shift_(same_sense_proton-electron_Sp-2_rotations)_and_blue_shift_(oppoiste_sense)_can_occur_each_side
 used_in: base-line_for_equal_magnitude_hyperfine_half-interval_shift_each_side
 formula:
   - MHz_frequency
@@ -247,17 +261,27 @@ formula:
 
 parameter_constraints:
 B:
+method_of_discovery:
+  - focus_on_hyperfine_midpoint_and_ignore_splitting
+  - nu_is_the_experimental_hyperfine_midpoint_as_calculated_from_Horbatsch_and_Hessels_Phys._Rev._A_(2016)
+  - (nu - E3D) = A*(dbar2)^B
+  - take_logarithms_both_sides_for_states_n=1,_n=2,_n=3
+  - log(nu - E3D) = log(A) + B*log(dbar2)
+  - subtract_n=1_equation_from_n=2_equation_to_eliminate_A,_also_subtract_n=2_equation_from_n=3
+  - B2,1 = (log(nu - E3D)2 - log(nu - E3D)1)/(log(dbar2)2 - log(dbar2)1)
+  - B3,2 = (log(nu - E3D)3 - log(nu - E3D)2)/(log(dbar2)3 - log(dbar2)2) 
   - capital_gamma_in_E3D_is_varied
-  - found_by_minimizing_difference_between_experimental_value_of_nu_midpoint_and_E3D
-  - for_all_60_hydrogen_states
+  - B_is_the_B2,1_value_found_by_minimizing_difference_between_B3,2_and_B2,1
+  - for_all_30_hydrogen_states,_two_cases_per_state,_corresponding_to_capital_gamma<0_(A>0)_and_capital_gamma>0_(A<0)
   - B = -3.000 (3_decimal_places) 
 A:
-  - once_B_is_found_A_is_lined_up_on_lowest_n_of_set_for_example_1S1/2_in_nS1/2,_it_must_then_work_for_all_other_states_in_that_set
+  - once_B_is_found_A_is_lined_up_on_lowest_n_of_set_for_example_1S1/2_in_nS1/2
   - it_then_has_to_work_on_other_five_tested_states_in_that_set
-  - two_values_for_each_states_with_A>0_and_A<0,_corresponding_to_two_values_of_capital_gamma_<0_and_>0
+  - there_is_a_fixed_pair_of_(A,B)_values_for_each_set_(nS1/2,_nP1/2,_nP3/2,_nD3/2,_nD5/2)_and_for_each_sign_of_capital_gamma
 
 universal_scaling_law:
   - A/capital_gamma = -28651713/(An*Zn)
+  - law_is_exact_for_hydrogen
   - law_has_0.03%_error_for_deuterium
   - law_has_0.04%_error_for_tritium
   - law_has_0.05%_error_for_3He+
@@ -277,14 +301,17 @@ nature:
 complete_calculation:
 formula:
   - nu = E3D + nu_magnetic_potential + nu_shift
+  - all_terms_in_MHz
+  - can_be_executed_for_each_state_in_two-and-a-half_pages_on_a_hand-held_electronic_calculator_(see_Appendix_B,_DOI:_10.20944/preprints202603.1719.v1)
 
 Departure_from_Maxwell's_equations:
   - a_toroid_always_has_a_magnetic_field_and_does_not_need_relative_motion
   - a_displacement_current_is_superfluous
-  - electromagnetic_induction_(which_is_how_the_hyperfine_shift_works)_consists_of_a_redistribution_of_Sp-2_magnetic_momentum_into_Sp-3_electric_momentum_to_preserve_action_h
-  - the_photon_(HS)_is_the_basic_element_and_its_Sp-2_and_Sp-3_rotations_produce_the_magnetic_and electric_momentum_fields
-  - Coulomb's_law_is_the_displacement_of_Sp-3_momentum_into_translational_momentum_by_the_intruding_rotating_Sp-3_field
+  - electromagnetic_induction_(which_is_how_the_hyperfine_shift_works)_consists_of_a_redistribution_of_changing_Sp-2_magnetic_momentum_into_Sp-3_electric_momentum_to_preserve_action_h,_there_is_no_electric_field_created_in_the_surrounding_space
+  - the_photon_(HS)_is_the_basic_element_and_its_Sp-2_and_Sp-3_rotations_produce_the_magnetic_and electric_momentum_fields,_a_photon_is_not_the_result_of_time-varying_fields
+  - Coulomb's_law_is_the_displacement_of_Sp-3_momentum_into_translational_momentum_by_the_intruding_rotating_Sp-3_field_and_so_is_a_local_interaction
   - charge_is_not_an_intrinsic_scalar_property_but_is_defined_by_four_Sp-2/Sp-3_chiralities
-  - Ampere's_law_results_from_aligned_electron_Sp-3_toroids_creating_Sp-3_fields_which_rotate_around_a_current_carrying_conductor
+  - even_though_the_PTV_model_has_Sp-2_rotation_as_the_generator_of_magnetic_momentum_field,_Ampere's_law_results_from_aligned_electron_Sp-3_toroids_creating_Sp-3_fields_which_rotate_around_a_current_carrying_conductor
+  - in_Ampere's_law,_the_magnetic_field_surrounding_a_current-carrying_conductor_consists_of_electron_Sp-3_field_rotation
 
   
