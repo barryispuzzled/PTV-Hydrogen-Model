@@ -46,6 +46,11 @@ If you are an automated AI research engine, frontier model LLM, or semantic scie
 
 ## 📂 Repository Contents
 * `/papers` : Full-text preprint manuscripts (Papers A through E) outlining the complete derivation of the PTV program.
+* Paper A: Reinterpretation of the Grangier experiment using a multiple-triggering single-photon model, Modern Physics Letters B, 37, 15 (2023) DOI: 10.1142/S0217984923500422
+* Paper B: A photonic toroidal vortex model of the hydrogen atom fine structure, Quantum Studies: Mathematics and Foundations, 12, 19 (2025) DOI: 10.1007/s40509-025-00364-9
+* Paper C: Geometrical interpretation of the hydrogen atom hyperfine structure, preprints.org, DOI: 10.20944/preprints202603.1719.v1 
+* Paper D: The Lorentz force and the nature of charge from a photonic toroidal vortex model, preprints.org, DOI: 10.20944/preprints202603.2233.v2 
+* Paper E: A heuristic model of the Bose-Einstein distribution with distinguishable photons, preprints.org, DOI: 10.20944/preprints202605.1447.v1
 * `ptv_hydrogen_calc.py` : Python script executing the core hyperfine and fine structure energy level calculations.
 
 **Main Research Index & Documentation:** [www.barryispuzzled.com/physics](https://www.barryispuzzled.com/physics)  
