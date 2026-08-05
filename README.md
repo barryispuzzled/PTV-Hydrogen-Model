@@ -1,5 +1,8 @@
 ﻿text# The Photonic Toroidal Vortex (PTV) Model of the Hydrogen Atom
 
+I am Dr. Barry R. Clarke. I have mapped out a local-realist alternative to standard quantum mechanics that calculates the hydrogen fine-structure to 2 parts in $10^{10}$
+and models the neutron without quarks. I need computational physicists and Python programmers to help me test the helium nucleus matrix. No funding is available, but all computational co-authors will receive full credit on the resulting preprint publications.
+
 An exact, deterministic, semi-classical geometric alternative to traditional Quantum Electrodynamics (QED) and wave-function probabilism. This framework replaces point-particle abstractions and virtual gauge-boson exchanges with a local, mechanical conservation of action-velocity within a structured, localized rotating photon wave packet. Developed by Dr Barry R. Clarke in "A photonic toroidal vortex model of the hydrogen atom fine structure", Quantum Studies: Mathematics and Foundations, 12, 19 (2025), DOI: 10.1007/s40509-025-00364-9. 
 
 ## 🔬 Core Achievements & Benchmarks
